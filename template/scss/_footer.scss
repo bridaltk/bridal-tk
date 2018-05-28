@@ -1,0 +1,79 @@
+#footer {
+  background-color: #f8f8f8;
+  .ft-infos {
+    padding: 70px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    .name {
+      width: 31%;
+      min-width: 300px;
+
+      .sentence:not(:last-child) {
+        padding-bottom: 20px;
+      }
+    }
+
+    .contact-form {
+      flex-grow: 1;
+      padding: 0 30px;
+
+      .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+
+        textarea, .btn {
+          grid-column: 1 / -1;
+        }
+
+        .btn {
+          margin-top: 5px;
+          width: 170px;
+          height: 40px;
+          border-radius: unset;
+        }
+      }
+    }
+
+    .social {
+      width: 14.5%;
+      min-width: 130px;
+
+      .button {
+        display: flex;
+      }
+
+      .btn {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px dashed #e6e6e6;
+
+        &.fb:hover {
+          background-color: $color-main;
+          border-color: transparent;
+          color: white;
+        }
+
+        &.ib:hover {
+          background-color: #111111;
+          border-color: transparent;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .ft-sys {
+    color: #c2c2c2;
+    background-color: #111111;
+    line-height: 20px;
+    padding: 10px 0;
+
+    a img {
+      display: initial;
+    }
+  }
+}

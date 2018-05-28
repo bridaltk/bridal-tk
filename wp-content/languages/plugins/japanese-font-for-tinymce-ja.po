@@ -1,0 +1,28 @@
+# Translation of Plugins - Japanese font for TinyMCE - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - Japanese font for TinyMCE - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-07-19 07:14:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Japanese font for TinyMCE - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://raspi-diary.com/"
+msgstr "https://raspi-diary.com/"
+
+#. Author of the plugin/theme
+msgid "raspi0124"
+msgstr "raspi0124"
+
+#. Description of the plugin/theme
+msgid "Add Japanese font to TinyMCE Advanced plugin's font family selections.."
+msgstr "日本語フォントを TinyMCE Advanced プラグインのビジュアルエディターのフォントファミリーに追加します。"
+
+#. Plugin Name of the plugin/theme
+msgid "Japanese font for TinyMCE"
+msgstr "Japanese font for TinyMCE"
