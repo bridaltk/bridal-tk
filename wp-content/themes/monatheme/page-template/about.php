@@ -40,7 +40,7 @@ while (have_posts()):
                                     ?>
                                     <li class="item  <?php echo $active; ?>">
                                         <div class="icon"><i class="<?php echo $item['icon']; ?>"></i></div>
-                                        <div class="info"><h1><a class="link" href="#<?php echo 'mona-active-menu-'.$k; ?>"><?php echo ($item['title']); ?></a><h1></div>
+                                        <div class="info"><a class="link" href="#<?php echo 'mona-active-menu-'.$k; ?>"><?php echo ($item['title']); ?></a></div>
                                     </li>   
                                     <?php
                                     $active = '';
