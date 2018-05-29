@@ -25,7 +25,7 @@ while (have_posts()):
                     <div class="position">
                         <a href="<?php echo get_home_url(); ?>"><?php _e('Trang chủ', 'monamedia'); ?></a>
                         /
-                        <span class="color"><?php echo '#' . $ms; ?></span>
+                        <span class="color"><?php echo $ms; ?></span>
                     </div>
                 </div>
 

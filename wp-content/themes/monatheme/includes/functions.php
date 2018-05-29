@@ -45,7 +45,7 @@ function mona_gai_loop($post_id, $data = true) {
 
         </div>
         <div class="info clear">
-            <p class="mona-user-info"><a href="<?php echo get_the_permalink($post_id); ?>"><?php echo '#' . $ms; ?></a></p>
+            <p class="mona-user-info"><a href="<?php echo get_the_permalink($post_id); ?>"><?php echo $ms; ?></a></p>
             <?php
             if ($data == true) {
                 ?>
@@ -55,7 +55,7 @@ function mona_gai_loop($post_id, $data = true) {
                     echo '<p class="mona-user-info">' . $day[1] . __('Tháng', 'monamedia') . $day[0] . __('Ngày', 'monamedia') . '</p>';
                 }
                 if ($tuoi != '') {
-                    echo '<p class="mona-user-info">' . $tuoi . __('tuổi', 'monamedia') . '</p>';
+                    echo '<p class="mona-user-info">' . $tuoi . '</p>';
                 }
 
                 if ($tinh != '') {

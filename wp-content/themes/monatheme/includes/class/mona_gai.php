@@ -196,7 +196,7 @@ class Mona_gai {
         $data = array(
             array(
                 'label' => __('Mã số', 'monamedia'),
-                'value' => '#' . $this->get_ms()
+                'value' => $this->get_ms()
             ),
             array(
                 'label' => __('Ngày nhập hội', 'monamedia'),
