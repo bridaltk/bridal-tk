@@ -56,7 +56,7 @@ class Mona_gai {
             if (isset($exp[2])) {
                 $old = (int) date('Y', time()) - (int) $exp[2];
                 if ($old > 0) {
-                    return $old;
+                    return $old . __('tuổi', 'monamedia');
                 }
             }
         }
@@ -80,7 +80,7 @@ class Mona_gai {
     }
 
     public function get_weight() {
-        return $this->mona_get_field('mona_gai_weight');
+        return $this->mona_get_field('mona_gai_weight') .__('kg', 'monamedia');
     }
 
     public function get_hoc_van() {
@@ -124,7 +124,7 @@ class Mona_gai {
     }
 
     public function get_tuoi_bo() {
-        return $this->mona_get_field('mona_gai_bo_tuoi');
+        return $this->mona_get_field('mona_gai_bo_tuoi') . __('tuổi', 'monamedia');
     }
 
     public function get_nghe_bo() {
@@ -132,7 +132,7 @@ class Mona_gai {
     }
 
     public function get_tuoi_me() {
-        return $this->mona_get_field('mona_gai_me_tuoi');
+        return $this->mona_get_field('mona_gai_me_tuoi') . __('tuổi', 'monamedia');
     }
 
     public function get_nghe_me() {
@@ -140,11 +140,22 @@ class Mona_gai {
     }
 
     public function get_anh_em() {
-        return $this->mona_get_field('mona_gai_so_anh_em');
+        return $this->mona_get_field('mona_gai_so_anh_em') . __('người', 'monamedia');
     }
 
     public function get_banthan() {
-        return $this->mona_get_field('mona_gai_ban_than');
+        $siblings = $this->mona_get_field('mona_gai_so_anh_em');
+        if ($siblings == 1) {
+            return __('Con một', 'monamedia');
+        }
+
+        $rank = $this->mona_get_field('mona_gai_ban_than');
+        if ($rank == 1) {
+            return __('Trưởng nữ', 'monamedia');
+        } elseif ($rank == $siblings) {
+            return __('Con út', 'monamedia');
+        }
+        return $this->mona_get_field('mona_gai_ban_than') . __('con thứ', 'monamedia');
     }
 
     public function get_note() {
