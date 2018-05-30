@@ -98,7 +98,7 @@ while (have_posts()):
                         <?php
                     } else {
                         ?>
-                        <div class="side-left">
+                        <div class="side-left" style="background: white;">
                             <?php
                             if ($success == true) {
                                 unset($_POST);

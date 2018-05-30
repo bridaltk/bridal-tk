@@ -52,7 +52,7 @@ while (have_posts()):
 
                     <div class="side-right">
 
-                        <div class="system-tag-content">
+                        <div class="system-tag-content" style="background: white;">
 
                             <?php
                             if (is_array($systems)) {

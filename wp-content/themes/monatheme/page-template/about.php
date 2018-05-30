@@ -62,7 +62,7 @@ while (have_posts()):
                                         if (is_array($item['table_item'])) {
                                             foreach ($item['table_item'] as $table) {
                                                 ?>
-                                                <div class="summary">
+                                                <div class="summary" style="background: white;">
                                                     <?php
                                                     if ($table['title'] != '') {
                                                         echo '<div class="title"><h3>' . $table['title'] . '</h3></div>';

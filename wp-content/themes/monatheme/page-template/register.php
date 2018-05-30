@@ -48,7 +48,7 @@ while (have_posts()):
 
                 <div class="join-detail__content clear">
 
-                    <div class="side-left">
+                    <div class="side-left" style="background: white;">
                         <?php
                         if ($success == true) {
                             mona_send_email_veryfi($_POST['mona_user_name']);

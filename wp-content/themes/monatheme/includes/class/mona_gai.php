@@ -140,15 +140,15 @@ class Mona_gai {
     }
 
     public function get_anh_em() {
-        return $this->mona_get_field('mona_gai_so_anh_em') . __('người', 'monamedia');
-    }
-
-    public function get_banthan() {
         $siblings = $this->mona_get_field('mona_gai_so_anh_em');
         if ($siblings == 1) {
             return __('Con một', 'monamedia');
         }
+        return $siblings . __('người', 'monamedia');
+    }
 
+    public function get_banthan() {
+        $siblings = $this->mona_get_field('mona_gai_so_anh_em');
         $rank = $this->mona_get_field('mona_gai_ban_than');
         if ($rank == 1) {
             return __('Trưởng nữ', 'monamedia');
