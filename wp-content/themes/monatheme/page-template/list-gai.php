@@ -347,7 +347,7 @@ while (have_posts()):
                                 ?>
                                 <div class="content" style="background-image: url(<?php the_post_thumbnail_url('large'); ?>);">
                                     <div class="info"><?php the_field('mona_tour_Summary'); ?>
-                                        <a href="<?php the_permalink(); ?>" class="btn btn-1"><?php _e('Tham gia', 'monamedia'); ?></a>
+                                        <a href="<?php the_permalink(); ?>" class="btn btn-1"><?php _e('View Details', 'monamedia'); ?></a>
                                     </div> 
                                 </div>
                                 <?php

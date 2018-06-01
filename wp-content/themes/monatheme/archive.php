@@ -51,7 +51,7 @@
                                 <p class="meta"><strong><?php echo date('d/m/Y'); ?></strong></p>
                                 <h4 class="title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                                 <div class="spec"><?php the_excerpt(); ?></div>
-                                <p class="right-txt"><a href="<?php echo get_permalink(); ?>" class="link read-more-link">Xem thêm</a></p>
+                                <p class="right-txt"><a href="<?php echo get_permalink(); ?>" class="link read-more-link"><?php _e('Xem thêm','monamedia');?></a></p>
                             </div>
                         </div>
                     </li>

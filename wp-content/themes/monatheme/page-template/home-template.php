@@ -77,7 +77,7 @@ while (have_posts()):
                                         <?php the_field('mona_tour_Summary'); ?>
                                     </div>
                                     <?php
-                                    echo '<div class="button"> <a href="' . get_the_permalink() . '" class="btn btn-1">' . __('Tham gia', 'monamedia') . '</a> </div>';
+                                    echo '<div class="button"> <a href="' . get_the_permalink() . '" class="btn btn-1">' . __('View Details', 'monamedia') . '</a> </div>';
                                     ?>
 
                                 </div>
