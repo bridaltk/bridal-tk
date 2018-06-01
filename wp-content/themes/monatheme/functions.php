@@ -184,8 +184,8 @@ add_filter('wp_nav_menu_objects', 'add_menu_parent_class');
 function mona_add_custom_post() {
     $args = array(
         'labels' => array(
-            'name' => 'Customer',
-            'singular_name' => 'Customer',
+            'name' => __('Customer', 'monamedia'),
+            'singular_name' => __('Customer', 'monamedia'),
             'add_new' => __('Add Customer', 'monamedia'),
             'add_new_item' => __('New Customer', 'monamedia'),
             'edit_item' => __('Edit Customer', 'monamedia'),
@@ -229,8 +229,8 @@ function mona_add_custom_post() {
 
     $args = array(
         'labels' => array(
-            'name' => 'Tour',
-            'singular_name' => 'Tour',
+            'name' => __('Tour', 'monamedia'),
+            'singular_name' => __('Tour', 'monamedia'),
             'add_new' => __('Add Tour', 'monamedia'),
             'add_new_item' => __('New Tour', 'monamedia'),
             'edit_item' => __('Edit Tour', 'monamedia'),
@@ -272,8 +272,8 @@ function mona_add_custom_post() {
 
     $args = array(
         'labels' => array(
-            'name' => 'Meeting',
-            'singular_name' => 'Meeting',
+            'name' => __('Meeting', 'monamedia'),
+            'singular_name' => __('Meeting', 'monamedia'),
             'add_new' => __('Add Meeting', 'monamedia'),
             'add_new_item' => __('New Meeting', 'monamedia'),
             'edit_item' => __('Edit Meeting', 'monamedia'),
@@ -314,8 +314,8 @@ function mona_add_custom_post() {
     register_post_type('mona_order', $args);
     $args = array(
         'labels' => array(
-            'name' => 'Promotion',
-            'singular_name' => 'Promotion',
+            'name' => __('Promotion', 'monamedia'),
+            'singular_name' => __('Promotion', 'monamedia'),
             'add_new' => __('Add Promotion', 'monamedia'),
             'add_new_item' => __('New Promotion', 'monamedia'),
             'edit_item' => __('Edit Promotion', 'monamedia'),
@@ -356,8 +356,8 @@ function mona_add_custom_post() {
     register_post_type('mona_promotion', $args);
     $args = array(
         'labels' => array(
-            'name' => 'Hoạt Động',
-            'singular_name' => 'Hoạt Động',
+            'name' => __('Hoạt Động', 'monamedia'),
+            'singular_name' => __('Hoạt Động', 'monamedia'),
             'add_new' => __('Add Hoạt Động', 'monamedia'),
             'add_new_item' => __('New Hoạt Động', 'monamedia'),
             'edit_item' => __('Edit Hoạt Động', 'monamedia'),
@@ -398,8 +398,8 @@ function mona_add_custom_post() {
     //register_post_type('mona_hoat_dong', $args);
     $args = array(
         'labels' => array(
-            'name' => 'Member',
-            'singular_name' => 'Member',
+            'name' => __('Member', 'monamedia'),
+            'singular_name' => __('Member', 'monamedia'),
             'add_new' => __('Add Member', 'monamedia'),
             'add_new_item' => __('New Member', 'monamedia'),
             'edit_item' => __('Edit Member', 'monamedia'),
