@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mona theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-23 13:39+0000\n"
-"PO-Revision-Date: 2018-05-23 13:40+0000\n"
+"POT-Creation-Date: 2018-06-01 15:19+0000\n"
+"PO-Revision-Date: 2018-06-01 15:20+0000\n"
 "Last-Translator: sirius <bridal.tk@gmail.com>\n"
-"Language-Team: Japanese\n"
+"Language-Team: 日本語\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
@@ -180,7 +180,7 @@ msgstr "登録"
 
 #: index.php:10 index.php:14 single.php:12
 msgid "Tin tức"
-msgstr "ニュース"
+msgstr "記事一覧"
 
 #: index.php:12 page.php:19 single-mona_gai.php:26 single-mona_promotion.php:14
 #: single.php:14 page-template/about.php:25 page-template/list-gai.php:119
@@ -751,7 +751,7 @@ msgstr "体重"
 
 #: page-template/list-gai.php:191 includes/class/mona_gai.php:219
 msgid "Quốc gia"
-msgstr "国"
+msgstr "在住国"
 
 #: page-template/list-gai.php:198 includes/class/mona_gai.php:167
 msgid "Việt nam"
@@ -891,7 +891,7 @@ msgstr "基本"
 
 #: page-template/register.php:99
 msgid "Nhập lại mật khẩu"
-msgstr "パスワードを再入力してください"
+msgstr "パスワードの確認"
 
 #: page-template/register.php:126 patch/booking-login.php:20
 #: patch/account/account.php:78
@@ -966,12 +966,12 @@ msgstr "母の年齢"
 #: includes/class/mona-user.php:106 includes/class/mona_gai.php:269
 #: patch/account/account.php:264
 msgid "Số anh chị em"
-msgstr "兄弟"
+msgstr "兄弟人数"
 
 #: page-template/register.php:294 patch/booking-login.php:187
 #: includes/class/mona-user.php:110 patch/account/account.php:270
 msgid "Thứ tự bản thân"
-msgstr "自分"
+msgstr "続柄"
 
 #: page-template/register.php:301 patch/booking-login.php:194
 #: includes/class/mona-user.php:114 patch/account/account.php:277
@@ -1213,7 +1213,7 @@ msgstr "婚歴"
 
 #: includes/class/mona_gai.php:223
 msgid "Tỉnh thành"
-msgstr "省・県"
+msgstr "在住地"
 
 #: includes/class/mona_gai.php:235
 msgid "Trình độ tiếng anh"
@@ -1225,7 +1225,7 @@ msgstr "日本語能力"
 
 #: includes/class/mona_gai.php:273
 msgid "bản thân là con thứ"
-msgstr "自分"
+msgstr "続柄"
 
 #: patch/account/account-doi-mat-khau.php:17
 msgid "Mật khẩu mới và xác nhận mật khẩu không trùng khớp"
@@ -1303,3 +1303,27 @@ msgstr ""
 
 msgid "Mới nhập hội"
 msgstr "新入会順"
+
+msgid "người"
+msgstr "人"
+
+msgid "kg"
+msgstr "キロ"
+
+msgid "Trưởng nữ"
+msgstr "長女"
+
+msgid "Con út"
+msgstr "末っ子"
+
+msgid "con thứ"
+msgstr "番目の子"
+
+msgid "Con một"
+msgstr "一人っ子"
+
+msgid "Customer"
+msgstr "顧客"
+
+msgid "Tour"
+msgstr "渡航"
