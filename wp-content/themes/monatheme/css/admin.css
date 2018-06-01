@@ -1,0 +1,105 @@
+.mona-input-wrapp{
+    margin: 0 -15px;
+}
+.clear:after, .all:after, .box__input .content:after {
+  content: "";
+  display: table;
+  clear: both; }
+.clear:before, .all:before, .box__input .content:before {
+  display: table;
+  content: " "; }
+.mona-input-wrapp .input-wrap{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    min-height: 93px;
+}
+.mona-input-wrapp .input-wrap input,
+.mona-input-wrapp .input-wrap textarea,
+.mona-input-wrapp .input-wrap select{
+    width: 100%;
+    
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px; }
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    position: relative;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__clear{
+    position: absolute;
+    right: 0;
+}
+.select2-results__option[aria-selected=true] {
+    display: none;
+}
+.mona-wrapp-page table th.sortable{
+    padding: 8px;
+}
+.mona_hoat_dong .hd-item{
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #b4b9be;
+    position: relative;
+}
+.mona_hoat_dong .hd-item .item{
+    margin-right: 20px;
+}
+.mona_hoat_dong .hd-item .item input{
+        width: 100%;
+    margin-bottom: 5px;
+}
+.mona_hoat_dong .hd-item .item textarea{
+    width: 100%;
+    height: 100px;
+}
+.mona_hoat_dong .hd-item .dashicons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.mona-ga-view .list{
+    margin: 0 -5px;
+}
+.mona-ga-view .list li{
+    width: 29%;
+    position: relative;
+    float: left;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+.mona-ga-view .list li .dashicons{
+        position: absolute;
+    top: -5px;
+    right: -5px;
+    color: #fff;
+    background: #000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.mona-ga-view .list li img{
+    max-width: 100%;
+    height: auto;
+}
+.mona-user-meta .list{
+    margin: 0 -10px;
+}
+.mona-user-meta .list li{
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.mona-user-meta .list li input,
+.mona-user-meta .list li select,
+.mona-user-meta .list li textarea{
+    width: 100%;
+    height: 40px;
+}
+.mona-user-meta .list li textarea{
+    height: 120px;
+}

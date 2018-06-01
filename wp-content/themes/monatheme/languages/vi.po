@@ -1,0 +1,1324 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mona theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-01 15:19+0000\n"
+"PO-Revision-Date: 2018-06-01 15:28+0000\n"
+"Last-Translator: sirius <bridal.tk@gmail.com>\n"
+"Language-Team: Tiếng Việt\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: 404.php:16 patch/success-register.php:51
+msgid "Về Trang Chủ"
+msgstr ""
+
+#: comments.php:47
+msgid "Để lại lời nhắn"
+msgstr ""
+
+#: comments.php:78
+msgid "Reply"
+msgstr ""
+
+#: comments.php:91
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:189
+msgid "Add Customer"
+msgstr "Thêm khách hàng"
+
+#: functions.php:190 functions.php:192
+msgid "New Customer"
+msgstr "Khách hàng mới"
+
+#: functions.php:191
+msgid "Edit Customer"
+msgstr "Thay đổi TT khách hàng"
+
+#: functions.php:193
+msgid "View Customer"
+msgstr "Xem khách hàng"
+
+#: functions.php:194
+msgid "View Customers"
+msgstr "Xem DS khách hàng"
+
+#: functions.php:234
+msgid "Add Tour"
+msgstr "Thêm chuyến đi"
+
+#: functions.php:235 functions.php:237
+msgid "New Tour"
+msgstr "Chuyến đi mới"
+
+#: functions.php:236
+msgid "Edit Tour"
+msgstr "Soạn thảo chuyến đi"
+
+#: functions.php:238
+msgid "View Tour"
+msgstr "Xem chuyến đi"
+
+#: functions.php:239
+msgid "View Tours"
+msgstr "Danh sách chuyến đi"
+
+#: functions.php:277
+msgid "Add Meeting"
+msgstr "Thêm gặp mặt"
+
+#: functions.php:278 functions.php:280
+msgid "New Meeting"
+msgstr "Gặp mặt mới"
+
+#: functions.php:279
+msgid "Edit Meeting"
+msgstr "Soạn thảo gặp mặt"
+
+#: functions.php:281
+msgid "View Meeting"
+msgstr "Xem gặp mặt"
+
+#: functions.php:282
+msgid "View Meetings"
+msgstr "Danh sách gặp mặt"
+
+#: functions.php:319
+msgid "Add Promotion"
+msgstr "Thêm khuyến mãi"
+
+#: functions.php:320 functions.php:322
+msgid "New Promotion"
+msgstr "Khuyến mãi mới"
+
+#: functions.php:321
+msgid "Edit Promotion"
+msgstr "Soạn thảo khuyến mãi"
+
+#: functions.php:323
+msgid "View Promotion"
+msgstr "Xem khuyến mãi"
+
+#: functions.php:324
+msgid "View Promotions"
+msgstr "Danh sách khuyến mãi"
+
+#: functions.php:361
+msgid "Add Hoạt Động"
+msgstr ""
+
+#: functions.php:362 functions.php:364
+msgid "New Hoạt Động"
+msgstr ""
+
+#: functions.php:363
+msgid "Edit Hoạt Động"
+msgstr ""
+
+#: functions.php:365
+msgid "View Hoạt Động"
+msgstr ""
+
+#: functions.php:366
+msgid "View Hoạt Độngs"
+msgstr ""
+
+#: functions.php:403
+msgid "Add Member"
+msgstr "Thêm hội viên"
+
+#: functions.php:404 functions.php:406
+msgid "New Member"
+msgstr "Hội viên mới"
+
+#: functions.php:405
+msgid "Edit Member"
+msgstr "Soạn thảo hội viên"
+
+#: functions.php:407
+msgid "View Member"
+msgstr "Xem hội viên"
+
+#: functions.php:408
+msgid "View Members"
+msgstr "Danh sách hội viên"
+
+#: functions.php:456 page-template/my-account.php:30
+msgid "Tài khoản"
+msgstr ""
+
+#: functions.php:458 page-template/my-account.php:40
+msgid "Quản lý tài khoản"
+msgstr ""
+
+#: functions.php:459 patch/account/account-doi-mat-khau.php:31
+#: patch/account/account-doi-mat-khau.php:57
+msgid "Đổi mật khẩu"
+msgstr ""
+
+#: functions.php:461 page-template/booking.php:96
+#: page-template/my-account.php:63
+msgid "đăng xuất"
+msgstr ""
+
+#: functions.php:464 page-template/login.php:72 page-template/login.php:117
+msgid "Đăng nhập"
+msgstr ""
+
+#: functions.php:465 page-template/booking-old.php:232
+#: page-template/booking.php:205 page-template/register.php:46
+#: page-template/register.php:314 page-template/register-temp.php:26
+#: patch/account/account.php:290
+msgid "Đăng ký"
+msgstr ""
+
+#: index.php:10 index.php:14 single.php:12
+msgid "Tin tức"
+msgstr ""
+
+#: index.php:12 page.php:19 single-mona_gai.php:26 single-mona_promotion.php:14
+#: single.php:14 page-template/about.php:25 page-template/list-gai.php:119
+#: page-template/system.php:25 page-template/verify.php:42
+#: page-template/requirevery.php:33
+msgid "Trang chủ"
+msgstr ""
+
+#: index.php:27 single-mona_promotion.php:25 single-mona_promotion.php:78
+#: single.php:25 single.php:76
+msgid "By"
+msgstr ""
+
+#: index.php:29
+msgid "Xem thêm"
+msgstr ""
+
+#: searchform.php:4
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: single-mona_gai.php:24
+msgid "Thông tin hội viên"
+msgstr ""
+
+#: single-mona_gai.php:43
+msgid "Video"
+msgstr ""
+
+#: single-mona_gai.php:63 patch/success-register.php:42
+msgid "Gallery"
+msgstr ""
+
+#: single-mona_gai.php:97 page-template/booking-old.php:107
+#: page-template/register.php:113 patch/booking-login.php:2
+#: patch/account/account.php:61
+msgid "Thông tin chung"
+msgstr ""
+
+#: single-mona_gai.php:123
+msgid "Thông tin Gia cảnh"
+msgstr ""
+
+#: single-mona_gai.php:149
+msgid "Chọn cô gái này"
+msgstr ""
+
+#: single-mona_promotion.php:12 page-template/list-gai.php:334
+msgid "Promotion"
+msgstr "Khuyến mãi"
+
+#: single-mona_promotion.php:50
+msgid "Tin tức mới nhất"
+msgstr ""
+
+#: taxonomy.php:25
+msgid "Posts Categorized:"
+msgstr ""
+
+#: taxonomy.php:39
+msgid "Read More &raquo;"
+msgstr ""
+
+#: taxonomy.php:57
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: taxonomy.php:60
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: taxonomy.php:63
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+
+#: core/customizer.php:15
+msgid "General Option"
+msgstr ""
+
+#: core/customizer.php:20
+msgid "Header Option"
+msgstr ""
+
+#: core/customizer.php:25
+msgid "Social Link"
+msgstr ""
+
+#: core/customizer.php:30
+msgid "Footer Option"
+msgstr ""
+
+#: core/customizer.php:43
+msgid "Header Logo"
+msgstr ""
+
+#: core/customizer.php:45 core/customizer.php:55
+msgid "Enter your Logo"
+msgstr ""
+
+#: core/customizer.php:53
+msgid "Footer Logo"
+msgstr ""
+
+#: core/customizer.php:63
+msgid "Coppyright"
+msgstr ""
+
+#: core/customizer.php:65
+msgid "Enter your Coppyright"
+msgstr ""
+
+#: core/customizer.php:74
+msgid "Facebook"
+msgstr ""
+
+#: core/customizer.php:76
+msgid "Enter your Facebook Link"
+msgstr ""
+
+#: core/customizer.php:84
+msgid "Google +"
+msgstr ""
+
+#: core/customizer.php:86
+msgid "Enter your G+ Link"
+msgstr ""
+
+#: core/customizer.php:94
+msgid "Instagram"
+msgstr ""
+
+#: core/customizer.php:96
+msgid "Enter your Instagram Link"
+msgstr ""
+
+#: core/customizer.php:104
+msgid "Linkedin"
+msgstr ""
+
+#: core/customizer.php:106
+msgid "Enter your Linkedin Link"
+msgstr ""
+
+#: core/customizer.php:114
+msgid "Youtube"
+msgstr ""
+
+#: core/customizer.php:116
+msgid "Enter your Youtube Link"
+msgstr ""
+
+#: core/customizer.php:124
+msgid "Twitter"
+msgstr ""
+
+#: core/customizer.php:126
+msgid "Enter your Twitter Link"
+msgstr ""
+
+#: core/reset.php:117
+msgid "Theme Main Menu"
+msgstr ""
+
+#: core/reset.php:118
+msgid "Theme Footer Menu"
+msgstr ""
+
+#: core/reset.php:119
+msgid "Theme Top Menu"
+msgstr ""
+
+#: core/reset.php:163
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#: includes/ajax.php:11 page-template/login.php:23
+#: includes/class/mona-user-old.php:165 includes/class/mona-user.php:153
+#: includes/class/mona-user.php:177
+msgid "Không tồn tại user"
+msgstr ""
+
+#: includes/ajax.php:16 page-template/login.php:27
+msgid "Mật khẩu không đúng"
+msgstr ""
+
+#: includes/ajax.php:23 page-template/register-temp.php:36
+#: patch/success-sendveryfi.php:9
+msgid "chúng tôi đã gửi 1 email để xác nhận tài khoản của bạn"
+msgstr ""
+
+#: includes/ajax.php:23 page-template/register-temp.php:39
+#: patch/success-sendveryfi.php:12
+msgid "Không nhận được email"
+msgstr ""
+
+#: includes/ajax.php:23 page-template/register-temp.php:40
+#: patch/success-sendveryfi.php:13
+msgid "Gửi lại email"
+msgstr ""
+
+#: includes/ajax.php:76 includes/class/mona-user-old.php:199
+#: includes/class/mona-user.php:321
+msgid "Email không được trống"
+msgstr ""
+
+#: includes/ajax.php:84
+msgid "Email hợp lệ"
+msgstr ""
+
+#: includes/ajax.php:87 page-template/booking.php:43
+msgid "Email đã có người sử dụng"
+msgstr ""
+
+#: includes/ajax.php:103
+msgid "Oops! can't upload file"
+msgstr ""
+
+#: includes/ajax.php:145 patch/account/account-chuyen-di.php:53
+msgid "Meeting"
+msgstr "Gặp mặt"
+
+#: includes/ajax.php:146 patch/account/account-chuyen-di.php:54
+msgid "Wedding"
+msgstr ""
+
+#: includes/ajax.php:147 patch/account/account-chuyen-di.php:55
+msgid "Free"
+msgstr ""
+
+#: includes/ajax.php:148 patch/account/account-chuyen-di.php:56
+msgid "Business"
+msgstr ""
+
+#: includes/ajax.php:151 patch/account/account-chuyen-di.php:37
+msgid "Loại chuyến đi"
+msgstr ""
+
+#: includes/ajax.php:155 patch/account/account-chuyen-di.php:43
+msgid "Phiên dịch"
+msgstr ""
+
+#: includes/ajax.php:159 includes/ajax.php:167
+#: patch/account/account-chuyen-di.php:34
+#: patch/account/account-chuyen-di.php:109
+msgid "Ngày đi"
+msgstr ""
+
+#: includes/ajax.php:163
+msgid "Mã chuyến bay"
+msgstr ""
+
+#: includes/ajax.php:171
+msgid "Ngày đến"
+msgstr ""
+
+#: includes/ajax.php:175
+msgid "Ngày rời việt nam"
+msgstr ""
+
+#: includes/ajax.php:179
+msgid "Lịch trình"
+msgstr ""
+
+#: includes/functions.php:41
+msgid "Có video"
+msgstr ""
+
+#: includes/functions.php:55 includes/class/mona_gai.php:74
+msgid "Tháng"
+msgstr ""
+
+#: includes/functions.php:55 includes/class/mona_gai.php:74
+msgid "Ngày"
+msgstr ""
+
+#: includes/functions.php:58
+msgid "tuổi"
+msgstr ""
+
+#: includes/functions.php:83
+msgid "Độc thân"
+msgstr ""
+
+#: includes/functions.php:86 includes/functions.php:421
+#: includes/metabox.php:115
+msgid "Đã kết hôn"
+msgstr ""
+
+#: includes/functions.php:89
+msgid "Đính hôn"
+msgstr ""
+
+#: includes/functions.php:92
+msgid "Bỏ hôn"
+msgstr ""
+
+#. Widget slug.
+#: includes/functions.php:321
+msgid "Hoạt động"
+msgstr ""
+
+#: includes/functions.php:418 includes/metabox.php:114
+msgid "Đã đính hôn"
+msgstr ""
+
+#: includes/functions.php:424 includes/metabox.php:116
+msgid "Đã hủy hôn"
+msgstr ""
+
+#: includes/functions.php:427 includes/metabox.php:117
+msgid "Đã ly hôn"
+msgstr ""
+
+#: includes/functions.php:430
+msgid "Open"
+msgstr ""
+
+#: includes/functions.php:437 includes/metabox.php:180
+#: page-template/list-gai.php:231 page-template/register.php:187
+#: patch/booking-login.php:81 patch/account/account.php:139
+msgid "Tiểu học"
+msgstr ""
+
+#: includes/functions.php:438 includes/metabox.php:181
+#: page-template/list-gai.php:232 page-template/register.php:188
+#: patch/booking-login.php:82 patch/account/account.php:140
+msgid "Trung học"
+msgstr ""
+
+#: includes/functions.php:439 includes/metabox.php:182
+#: page-template/list-gai.php:233 page-template/register.php:189
+#: patch/booking-login.php:83 patch/account/account.php:141
+msgid "Phổ thông"
+msgstr ""
+
+#: includes/functions.php:440 includes/metabox.php:183
+#: page-template/list-gai.php:234 page-template/register.php:190
+#: patch/booking-login.php:84 includes/class/mona_gai.php:171
+#: patch/account/account.php:142
+msgid "Trung cấp"
+msgstr ""
+
+#: includes/functions.php:441 includes/metabox.php:184
+#: page-template/list-gai.php:235 page-template/register.php:191
+#: patch/booking-login.php:85 patch/account/account.php:143
+msgid "Cao đẳng"
+msgstr ""
+
+#: includes/functions.php:442 includes/metabox.php:185
+#: page-template/list-gai.php:236 page-template/register.php:192
+#: patch/booking-login.php:86 patch/account/account.php:144
+msgid "Đại học"
+msgstr ""
+
+#: includes/functions.php:447 patch/success-register.php:29
+#: includes/class/mona_gai.php:63
+msgid "Không cung cấp"
+msgstr ""
+
+#: includes/functions.php:466
+#, php-format
+msgid ""
+"<p>Chào %s </p><p>Cảm ơn bạn đã tham gia vào <a href=\"%s\" "
+"target=\"_blank\">%s</a></p><p>Chúng tôi đã gửi bạn 1 Email chứa Url để "
+"verify tài khoản:</p> <p><a href=\"%s?verify=%s&login=%s\">%s?"
+"verify=%s&login=%s</a></p>"
+msgstr ""
+
+#: includes/metabox.php:113
+msgid "Mở"
+msgstr ""
+
+#: includes/metabox.php:170 includes/metabox.php:179 includes/metabox.php:190
+#: page-template/booking-old.php:263 page-template/booking.php:243
+#: page-template/list-gai.php:197 page-template/list-gai.php:230
+#: page-template/register.php:172 page-template/register.php:186
+#: page-template/register.php:202 patch/booking-login.php:66
+#: patch/booking-login.php:80 patch/booking-login.php:96
+#: patch/account/account.php:124 patch/account/account.php:138
+#: patch/account/account.php:154
+msgid "Chọn"
+msgstr ""
+
+#: includes/metabox.php:171 page-template/register.php:173
+#: patch/booking-login.php:67 patch/account/account.php:125
+msgid "A"
+msgstr ""
+
+#: includes/metabox.php:172 page-template/register.php:174
+#: patch/booking-login.php:68 patch/account/account.php:126
+msgid "B"
+msgstr ""
+
+#: includes/metabox.php:173 page-template/register.php:175
+#: patch/booking-login.php:69 patch/account/account.php:127
+msgid "AB"
+msgstr ""
+
+#: includes/metabox.php:174 page-template/register.php:176
+#: patch/booking-login.php:70 patch/account/account.php:128
+msgid "O"
+msgstr ""
+
+#: includes/metabox.php:191 page-template/register.php:203
+#: patch/booking-login.php:97 patch/success-register.php:23
+#: includes/class/mona_gai.php:119 patch/account/account.php:155
+msgid "Chưa kết hôn"
+msgstr ""
+
+#: includes/metabox.php:192 page-template/register.php:204
+#: patch/booking-login.php:98 patch/success-register.php:24
+#: includes/class/mona_gai.php:117 patch/account/account.php:156
+msgid "Tái hôn"
+msgstr ""
+
+#: page-template/booking-old.php:59 page-template/booking-old.php:83
+#: page-template/register-temp.php:33 patch/success-register.php:11
+#: patch/success-sendveryfi.php:6
+msgid "Đăng ký thành công"
+msgstr ""
+
+#: page-template/booking-old.php:111 page-template/register.php:85
+#: patch/booking-login.php:13 patch/success-register.php:14 patch/thank.php:26
+#: patch/account/account.php:47
+msgid "Email"
+msgstr ""
+
+#: page-template/booking-old.php:117 page-template/register.php:146
+#: patch/booking-login.php:40 includes/class/mona-user.php:50
+#: patch/account/account.php:98
+msgid "Điện thoại"
+msgstr ""
+
+#: page-template/booking-old.php:132
+msgid "Thông tin chi tiết"
+msgstr ""
+
+#: page-template/booking-old.php:135
+msgid "Họ và tên"
+msgstr ""
+
+#: page-template/booking-old.php:141 page-template/list-gai.php:209
+#: includes/class/mona_gai.php:199
+msgid "Tuổi"
+msgstr ""
+
+#: page-template/booking-old.php:147 page-template/register.php:210
+#: page-template/register.php:266 page-template/register.php:280
+#: patch/booking-login.php:104 patch/booking-login.php:159
+#: patch/booking-login.php:173 includes/class/mona-user.php:74
+#: includes/class/mona_gai.php:215 patch/account/account.php:162
+#: patch/account/account.php:242 patch/account/account.php:256
+msgid "Nghề nghiệp"
+msgstr ""
+
+#: page-template/booking-old.php:153
+msgid "Nơi ở"
+msgstr ""
+
+#: page-template/booking-old.php:159 page-template/register.php:122
+#: patch/booking-login.php:5 patch/account/account.php:74
+msgid "Ảnh đại diện"
+msgstr ""
+
+#: page-template/booking-old.php:162
+msgid "Thêm ảnh"
+msgstr ""
+
+#: page-template/booking-old.php:179 page-template/booking.php:144
+msgid "Hội viên bạn yêu thích"
+msgstr ""
+
+#: page-template/booking-old.php:213 page-template/booking.php:185
+msgid "Thời gian muốn đi"
+msgstr ""
+
+#: page-template/booking-old.php:219 page-template/booking.php:191
+#: includes/class/mona_gai.php:243
+msgid "Ghi chú"
+msgstr ""
+
+#: page-template/booking.php:87
+msgid "Đăng ký gặp mặt"
+msgstr ""
+
+#: page-template/booking.php:95 page-template/my-account.php:62
+msgid "Oops! Tài khoản của bạn không đủ quyền để thao tác trên trang này"
+msgstr ""
+
+#: page-template/booking.php:96 page-template/my-account.php:63
+msgid "Phiền bạn "
+msgstr ""
+
+#: page-template/booking.php:96 page-template/my-account.php:63
+msgid " để tiếp tục"
+msgstr ""
+
+#: page-template/booking.php:120
+msgid " Note:"
+msgstr ""
+
+#: page-template/booking.php:120
+msgid " bạn có thể "
+msgstr ""
+
+#: page-template/booking.php:120
+msgid "đăng nhập"
+msgstr ""
+
+#: page-template/booking.php:120
+msgid "để rút ngắn các giá trị cần điền"
+msgstr ""
+
+#: page-template/booking.php:131
+msgid "Thông tin đăng ký gặp mặt"
+msgstr ""
+
+#: page-template/home-template.php:80 page-template/list-gai.php:349
+msgid "Tham gia"
+msgstr ""
+
+#: page-template/home-template.php:108
+msgid "Những hoạt động gần đây"
+msgstr ""
+
+#: page-template/home-template.php:141
+msgid "Hội viên mới gia nhập"
+msgstr ""
+
+#: page-template/home-template.php:173
+msgid "Hội viên được chú ý"
+msgstr ""
+
+#: page-template/list-gai.php:131
+msgid "Mã hội viên"
+msgstr ""
+
+#: page-template/list-gai.php:144 page-template/list-gai.php:290
+#: includes/class/mona_gai.php:191
+msgid "Ngày nhập hội"
+msgstr ""
+
+#: page-template/list-gai.php:148 page-template/list-gai.php:164
+#: page-template/list-gai.php:179 page-template/list-gai.php:212
+msgid "Ex: Từ"
+msgstr ""
+
+#: page-template/list-gai.php:152 page-template/list-gai.php:167
+#: page-template/list-gai.php:182 page-template/list-gai.php:215
+msgid "Ex: Đến"
+msgstr ""
+
+#: page-template/list-gai.php:161 page-template/register.php:154
+#: patch/booking-login.php:48 patch/account/account.php:106
+msgid "Chiều cao (cm)"
+msgstr ""
+
+#: page-template/list-gai.php:176 includes/class/mona-user.php:58
+#: includes/class/mona_gai.php:207
+msgid "Cân nặng"
+msgstr ""
+
+#: page-template/list-gai.php:191 includes/class/mona_gai.php:219
+msgid "Quốc gia"
+msgstr ""
+
+#: page-template/list-gai.php:198 includes/class/mona_gai.php:167
+msgid "Việt nam"
+msgstr ""
+
+#: page-template/list-gai.php:199 includes/class/mona_gai.php:168
+msgid "Nhật"
+msgstr ""
+
+#: page-template/list-gai.php:225 page-template/register.php:182
+#: patch/booking-login.php:76 includes/class/mona-user.php:66
+#: includes/class/mona_gai.php:211 patch/account/account.php:134
+msgid "Học vấn"
+msgstr ""
+
+#: page-template/list-gai.php:249
+msgid "Lọc"
+msgstr ""
+
+#: page-template/list-gai.php:272
+msgid "Số người 1 trang"
+msgstr ""
+
+#: page-template/list-gai.php:285
+msgid "Sắp xếp theo"
+msgstr ""
+
+#: page-template/list-gai.php:291
+msgid "Trẻ tuổi nhất"
+msgstr ""
+
+#: page-template/list-gai.php:292
+msgid "học vấn cao nhất"
+msgstr ""
+
+#: page-template/list-gai.php:314
+msgid "Oops! no girl from search"
+msgstr ""
+
+#: page-template/login.php:97 page-template/register.php:79
+#: patch/success-register.php:13 patch/account/account.php:41
+msgid "Tên đăng nhập"
+msgstr ""
+
+#: page-template/login.php:103 page-template/register.php:93
+msgid "Mật khẩu"
+msgstr ""
+
+#: page-template/login.php:119
+msgid "Bạn chưa có tài khoản? "
+msgstr ""
+
+#: page-template/login.php:119
+msgid "Đăng ký ngay"
+msgstr ""
+
+#: page-template/login.php:120
+msgid "Bạn quên mật khẩu? "
+msgstr ""
+
+#: page-template/login.php:120
+msgid "Tìm lại mật khẩu"
+msgstr ""
+
+#: page-template/lost-password.php:21
+msgid "Someone has requested a password reset for the following account:"
+msgstr ""
+
+#: page-template/lost-password.php:24
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: page-template/lost-password.php:25
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: page-template/lost-password.php:26
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: page-template/lost-password.php:29
+msgid "The email could not be sent."
+msgstr ""
+
+#: page-template/lost-password.php:29
+msgid "Possible reason: your host may have disabled the mail() function."
+msgstr ""
+
+#: page-template/lost-password.php:31
+msgid "Email have been Send ! please check your to reset password"
+msgstr ""
+
+#: page-template/lost-password.php:34 page-template/lost-password.php:38
+msgid "Oops! the user email is not valid"
+msgstr ""
+
+#: page-template/lost-password.php:95
+msgid "Cập nhật mật khẩu"
+msgstr ""
+
+#: page-template/lost-password.php:97
+msgid "Quên mật khẩu"
+msgstr ""
+
+#: page-template/lost-password.php:127
+msgid "Mật khẩu mới"
+msgstr ""
+
+#: page-template/lost-password.php:134
+msgid "Cập nhật"
+msgstr ""
+
+#: page-template/lost-password.php:145
+msgid "Email đăng nhập"
+msgstr ""
+
+#: page-template/lost-password.php:152
+msgid "Gửi email đăng nhập"
+msgstr ""
+
+#: page-template/my-account.php:44 patch/account/account-chuyen-di.php:12
+msgid "Chuyến đi"
+msgstr ""
+
+#: page-template/my-account.php:48
+msgid "Thay đổi mật khẩu"
+msgstr ""
+
+#: page-template/my-account.php:52
+msgid "Đăng xuất"
+msgstr ""
+
+#: page-template/register.php:74 patch/account/account.php:36
+msgid "Cơ bản"
+msgstr ""
+
+#: page-template/register.php:99
+msgid "Nhập lại mật khẩu"
+msgstr ""
+
+#: page-template/register.php:126 patch/booking-login.php:20
+#: patch/account/account.php:78
+msgid "Họ Tên (Kanji)"
+msgstr ""
+
+#: page-template/register.php:132 patch/booking-login.php:26
+#: patch/account/account.php:84
+msgid "Họ Tên (Romaji)"
+msgstr ""
+
+#: page-template/register.php:140 patch/booking-login.php:34
+#: includes/class/mona-user.php:46 patch/account/account.php:92
+msgid "Ngày sinh"
+msgstr ""
+
+#: page-template/register.php:160 patch/booking-login.php:54
+#: patch/account/account.php:112
+msgid "Cân nặng (kg)"
+msgstr ""
+
+#: page-template/register.php:168 patch/booking-login.php:62
+#: includes/class/mona-user.php:62 includes/class/mona_gai.php:231
+#: patch/account/account.php:120
+msgid "Nhóm máu"
+msgstr ""
+
+#: page-template/register.php:198 patch/booking-login.php:92
+#: includes/class/mona-user.php:70 patch/account/account.php:150
+msgid "Hôn nhân"
+msgstr ""
+
+#: page-template/register.php:216 patch/booking-login.php:110
+#: includes/class/mona-user.php:78 patch/account/account.php:168
+msgid "Thu nhập"
+msgstr ""
+
+#: page-template/register.php:224 patch/booking-login.php:118
+#: includes/class/mona-user.php:82 patch/account/account.php:176
+msgid "Địa chỉ"
+msgstr ""
+
+#: page-template/register.php:231 patch/booking-login.php:125
+#: includes/class/mona-user.php:86 includes/class/mona_gai.php:227
+#: patch/account/account.php:183
+msgid "Sở thích"
+msgstr ""
+
+#: page-template/register.php:239 patch/booking-login.php:132
+#: patch/account/account.php:191
+msgid "Thư viện ảnh"
+msgstr ""
+
+#: page-template/register.php:256 patch/booking-login.php:149
+#: patch/account/account.php:232
+msgid "Thông tin gia đình"
+msgstr ""
+
+#: page-template/register.php:260 patch/booking-login.php:153
+#: includes/class/mona-user.php:90 includes/class/mona_gai.php:253
+#: patch/account/account.php:236
+msgid "Tuổi bố"
+msgstr ""
+
+#: page-template/register.php:274 patch/booking-login.php:167
+#: includes/class/mona-user.php:98 includes/class/mona_gai.php:261
+#: patch/account/account.php:250
+msgid "Tuổi mẹ"
+msgstr ""
+
+#: page-template/register.php:288 patch/booking-login.php:181
+#: includes/class/mona-user.php:106 includes/class/mona_gai.php:269
+#: patch/account/account.php:264
+msgid "Số anh chị em"
+msgstr ""
+
+#: page-template/register.php:294 patch/booking-login.php:187
+#: includes/class/mona-user.php:110 patch/account/account.php:270
+msgid "Thứ tự bản thân"
+msgstr ""
+
+#: page-template/register.php:301 patch/booking-login.php:194
+#: includes/class/mona-user.php:114 patch/account/account.php:277
+msgid "Liên lạc"
+msgstr ""
+
+#: page-template/verify.php:25
+msgid "Oops! Url veryfi không tồn tại"
+msgstr ""
+
+#: patch/success-register.php:7
+msgid "Không lấy được data"
+msgstr ""
+
+#: patch/success-register.php:38
+msgid "Avatar"
+msgstr ""
+
+#: patch/success-register.php:52
+msgid "Trang cá nhân"
+msgstr ""
+
+#: patch/thank.php:11
+msgid ""
+"Cảm ơn bạn đã đăng ký!<br> chúng tôi sẻ liên hệ với bạn sớm nhất để xếp lịch"
+msgstr ""
+
+#: patch/thank.php:13
+msgid "Thông tin đăng ký"
+msgstr ""
+
+#: patch/thank.php:17
+msgid "ẢNH ĐẠI DIỆN"
+msgstr ""
+
+#: patch/thank.php:21
+msgid "HỌ VÀ TÊN"
+msgstr ""
+
+#: patch/thank.php:30
+msgid "ĐIỆN THOẠI"
+msgstr ""
+
+#: patch/thank.php:34
+msgid "NGHỀ NGHIỆP"
+msgstr ""
+
+#: patch/thank.php:38
+msgid "NƠI Ở"
+msgstr ""
+
+#: patch/thank.php:42
+msgid "THỜI GIAN MUỐN ĐI"
+msgstr ""
+
+#: patch/thank.php:46
+msgid "HỘI VIÊN ĐÃ CHỌN"
+msgstr ""
+
+#: patch/thank.php:58
+msgid "GHI CHÚ"
+msgstr ""
+
+#: patch/thank.php:64
+msgid "Về trang chủ"
+msgstr ""
+
+#: patch/thank.php:65
+msgid "Đăng ký mới"
+msgstr ""
+
+#: widget/mona-contact-info.php:127
+msgid "Display Social Icon?"
+msgstr ""
+
+#: includes/class/mona-user-old.php:68
+msgid "không tồn tại Khách hàng"
+msgstr ""
+
+#: includes/class/mona-user-old.php:152 includes/class/mona-user.php:220
+msgid "Không tồn tại khách hàng"
+msgstr ""
+
+#: includes/class/mona-user-old.php:181 includes/class/mona-user.php:192
+msgid "Không tồn tại user data"
+msgstr ""
+
+#: includes/class/mona-user-old.php:192 includes/class/mona-user.php:314
+msgid "Tên đăng nhập không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:196 includes/class/mona-user.php:318
+msgid "Tên đăng nhập đã tồn tại"
+msgstr ""
+
+#: includes/class/mona-user-old.php:203 includes/class/mona-user.php:325
+msgid "Email đã tồn tại"
+msgstr ""
+
+#: includes/class/mona-user-old.php:206 includes/class/mona-user.php:328
+msgid "Mật khẩu phải có ít nhất 6 ký tự"
+msgstr ""
+
+#: includes/class/mona-user-old.php:209 includes/class/mona-user.php:331
+msgid "Mật khẩu và xác nhận mật khẩu không trùng khớp"
+msgstr ""
+
+#: includes/class/mona-user-old.php:212 includes/class/mona-user.php:334
+msgid "Họ Tên (Kanji) không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:215 includes/class/mona-user.php:337
+msgid "Họ Tên (romaji) không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:218 includes/class/mona-user.php:340
+msgid "Ngày sinh không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:221 includes/class/mona-user.php:343
+msgid "Điện thoại không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:224 includes/class/mona-user.php:346
+msgid "Chiều cao không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:227 includes/class/mona-user.php:349
+msgid "Cân nặng không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:230 includes/class/mona-user.php:352
+msgid "Học vấn không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:233 includes/class/mona-user.php:355
+msgid "Hôn nhân không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:236 includes/class/mona-user.php:358
+msgid "Nghề nghiệp không được trống"
+msgstr ""
+
+#: includes/class/mona-user-old.php:239 includes/class/mona-user.php:361
+msgid "Thu nhập không được trống"
+msgstr ""
+
+#: includes/class/mona-user.php:38
+msgid "Tên Kanji"
+msgstr ""
+
+#: includes/class/mona-user.php:42
+msgid "Tên Romaji"
+msgstr ""
+
+#: includes/class/mona-user.php:54 includes/class/mona_gai.php:203
+msgid "Chiều cao"
+msgstr ""
+
+#: includes/class/mona-user.php:94 includes/class/mona_gai.php:257
+msgid "Nghề nghiệp bố"
+msgstr ""
+
+#: includes/class/mona-user.php:102 includes/class/mona_gai.php:265
+msgid "Nghề nghiệp mẹ"
+msgstr ""
+
+#: includes/class/mona-user.php:270 includes/class/mona-user.php:302
+msgid "Không cập nhật được data khách hàng"
+msgstr ""
+
+#: includes/class/mona_gai.php:74
+msgid "Năm"
+msgstr ""
+
+#: includes/class/mona_gai.php:156
+msgid " cm"
+msgstr ""
+
+#: includes/class/mona_gai.php:161
+msgid "Tốt nghiệp tiểu học"
+msgstr ""
+
+#: includes/class/mona_gai.php:162
+msgid "Tốt nghiệp trung học"
+msgstr ""
+
+#: includes/class/mona_gai.php:163
+msgid "Tốt nghiệp phổ thông"
+msgstr ""
+
+#: includes/class/mona_gai.php:164
+msgid "Tốt nghiệp trung cấp"
+msgstr ""
+
+#: includes/class/mona_gai.php:165
+msgid "Tốt nghiệp cao đẳng"
+msgstr ""
+
+#: includes/class/mona_gai.php:166
+msgid "Tốt nghiệp đại học"
+msgstr ""
+
+#: includes/class/mona_gai.php:169
+msgid "Không biết"
+msgstr ""
+
+#: includes/class/mona_gai.php:170
+msgid "Sơ cấp"
+msgstr ""
+
+#: includes/class/mona_gai.php:172
+msgid "N1"
+msgstr ""
+
+#: includes/class/mona_gai.php:173
+msgid "N2"
+msgstr ""
+
+#: includes/class/mona_gai.php:174
+msgid "N3"
+msgstr ""
+
+#: includes/class/mona_gai.php:175
+msgid "N4"
+msgstr ""
+
+#: includes/class/mona_gai.php:176
+msgid "N5"
+msgstr ""
+
+#: includes/class/mona_gai.php:187
+msgid "Mã số"
+msgstr ""
+
+#: includes/class/mona_gai.php:195
+msgid "Lý lịch hôn nhân"
+msgstr ""
+
+#: includes/class/mona_gai.php:223
+msgid "Tỉnh thành"
+msgstr ""
+
+#: includes/class/mona_gai.php:235
+msgid "Trình độ tiếng anh"
+msgstr ""
+
+#: includes/class/mona_gai.php:239
+msgid "Trình độ tiếng nhật"
+msgstr ""
+
+#: includes/class/mona_gai.php:273
+msgid "bản thân là con thứ"
+msgstr ""
+
+#: patch/account/account-doi-mat-khau.php:17
+msgid "Mật khẩu mới và xác nhận mật khẩu không trùng khớp"
+msgstr ""
+
+#: patch/account/account-doi-mat-khau.php:20
+msgid "Mật khẩu mới quá ngắn"
+msgstr ""
+
+#: patch/account/account-doi-mat-khau.php:23
+msgid "Mật khẩu hiện tại không đúng"
+msgstr ""
+
+#: patch/account/account-doi-mat-khau.php:35
+msgid "Mật khẩu hiện tại"
+msgstr ""
+
+#: patch/account/account-doi-mat-khau.php:41
+msgid "Mật khẩu Mới"
+msgstr ""
+
+#: patch/account/account-doi-mat-khau.php:47
+msgid "Nhập lại mật khẩu Mới"
+msgstr ""
+
+#: patch/account/account.php:18
+msgid "Cập nhật thành công"
+msgstr ""
+
+#: patch/account/account-chuyen-di.php:40
+msgid "Chuyến bay"
+msgstr ""
+
+#: patch/account/account-chuyen-di.php:68
+msgid "Xem lịch biểu"
+msgstr ""
+
+#: patch/account/account-chuyen-di.php:76
+msgid "Chưa có chuyến đi nào dành cho bạn"
+msgstr ""
+
+#: patch/account/account-chuyen-di.php:92
+msgid "Gặp mặt"
+msgstr ""
+
+#: patch/account/account-chuyen-di.php:112
+msgid "Member"
+msgstr "Hội viên"
+
+#: patch/account/account-chuyen-di.php:142
+msgid "Bạn chưa chọn gặp mặt nào"
+msgstr ""
+
+#. Name of the theme
+msgid "Mona theme"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"This site was built using the Bones Development Theme. For more information "
+"about Bones or to view documentation, you can visit the <a href=\"https:"
+"//github.com/eddiemachado/bones/issues\" title=\"Bones Issues\">Bones "
+"Issues</a> page on Github. You'll want to customize this for your clients "
+"with your own information."
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "#"
+msgstr ""
+
+#. Author of the theme
+msgid "Hy Hý"
+msgstr ""
+
+msgid "Mới nhập hội"
+msgstr ""
+
+msgid "người"
+msgstr ""
+
+msgid "kg"
+msgstr ""
+
+msgid "Trưởng nữ"
+msgstr ""
+
+msgid "Con út"
+msgstr ""
+
+msgid "con thứ"
+msgstr ""
+
+msgid "Con một"
+msgstr ""
+
+msgid "Customer"
+msgstr "Khách hàng"
+
+msgid "Tour"
+msgstr "Chuyến đi"

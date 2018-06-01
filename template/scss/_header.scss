@@ -1,0 +1,456 @@
+
+#header .navbar-toggle {
+    display: none;
+    outline: none;
+    float: right;
+    position: relative;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    
+    .icon-bar {
+        @include transition(.3s);
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $icon-bar;
+        & +.icon-bar {
+            margin-top: 5px;
+        } 
+    }
+
+    &.open{
+        .icon-bar:nth-child(1){
+            -webkit-transform: translate(-1px, 7px) rotate(-225deg);
+            -moz-transform: translate(-1px, 7px) rotate(-225deg);
+            -o-transform: translate(-1px, 7px) rotate(-225deg);
+            -ms-transform: translate(-1px, 7px) rotate(-225deg);
+            transform: translate(-1px, 7px) rotate(-225deg);
+        }
+        .icon-bar:nth-child(2){
+            opacity: 0;
+        }
+        .icon-bar:nth-child(3){
+            -webkit-transform: translate(-1px, -7px) rotate(225deg);
+            -moz-transform: translate(-1px, -7px) rotate(225deg);
+            -ms-transform: translate(-1px, -7px) rotate(225deg);
+            -o-transform: translate(-1px, -7px) rotate(225deg);
+            transform: translate(-1px, -7px) rotate(225deg);
+        }
+    }
+    
+    
+}
+
+#header .has-dropdown{
+    position: relative;
+    >a{
+        &::after {
+            content: "\f078";
+            /* >> Name of the FA free font (mandatory)
+                      - 'Font Awesome 5 Free' for Regular and Solid symbols;
+                      - 'Font Awesome 5 Brand' for Brands symbols. */
+            font-family: 'Font Awesome 5 Free';
+            /* >> Weight of the font (mandatory)
+                      - 400 for Regular and Brands symbols;
+                      - 900 for Solid symbols. */
+            font-weight: 900;
+            /* >> Optional styling: */
+            float: right;
+            margin-left: 5px;
+        }
+    }
+    &:hover,
+    &:focus {
+        .dropdown-menu{
+            display: block;
+            -webkit-transform: perspective(1200px) rotateX(0deg);
+            transform: perspective(1200px) rotateX(0deg);
+        }
+    }
+}
+#header .dropdown-menu{
+    min-width: 200px;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: 90%;
+    left: 0;
+    display: block;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: $drop-bg;
+    @include transition(.3s);
+    transition-timing-function: cubic-bezier(0.7,0,0.185,1);
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.185,1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(1200px) rotateX(-90deg) ;
+    transform: perspective(1200px) rotateX(-90deg) ;
+    color: #fff;
+    
+}
+
+
+/* .collapse{
+    position: relative;
+    .collapse-heading{
+        @extend .clear;
+        position: relative;
+        line-height: 20px;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 10px 0;
+        .indicator{
+            margin-left: 10px;
+            display: inline-block; 
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: bold;
+            &:before{
+                content: "\f107";
+                line-height: 20px;
+            }
+        }
+    }
+    .collapse-body{
+        display: none;
+        position: relative;
+        @extend .clear;
+        padding: 10px 0;
+    }
+    &.on{
+        .collapse-heading{
+            .indicator{
+                &:before{
+                    content: "\f106";
+                }
+            }
+        }
+    }
+} */
+
+
+#header {
+  //background-color: $header-bg;
+  width: 100%;
+  z-index: 9999;
+  @include transition(.3s);
+  position: absolute;
+
+  &.static {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hd-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hd-left {
+    width: 40%;
+    border-right: 1px solid #e3e3e3;
+    height: 180px;
+    display: flex;
+    align-items: center;
+
+    .img {
+      text-align: initial;
+    }
+
+
+  }
+  
+  .main__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    > div:not(:first-child) {
+      padding-left: 7px;
+      overflow: hidden;
+    }
+
+    .lang {
+      position: relative; 
+      margin-right: 10px;
+
+      .global, .down {
+        position: absolute;
+        top: 50%;
+        pointer-events: none;
+        transform: translateY(-50%);
+        background: transparent;
+      }
+
+      .global {
+        left: 0;
+      }
+
+      .down {
+        right: 0;
+        color: $color-main;
+      }
+
+      .form-control {
+        padding: 10px 15px;
+        border: unset;
+        background: transparent;
+      }
+
+
+    }
+
+    .btn {
+      padding: unset;
+      height: 30px;
+      border: 1px solid #e1e1e1;
+      font-weight: normal;
+      justify-content: space-evenly;
+    }
+
+    .tw .btn {
+      width: 110px;
+      &:hover {
+        background-color: rgba(#00acef, $alpha: 0.05);
+        border-color: #00acef;
+      }
+      i {
+        color: #00acef;
+      }
+    }
+
+    .fb .btn {
+      width: 130px;
+      background-color: #2748a3;
+      color: white;
+
+      &:hover {
+        background-color: darken(#2748a3, $amount: 10%);
+      }
+      span {
+        background-color: #fff;
+        color: black;
+        padding: 2px;
+        line-height: 1.3;
+        border-radius: 4px;
+        margin-right: -5px;
+      }
+    }
+
+  }
+
+  .hd-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .main__bot {
+    display: flex;
+    align-items: center;
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    height: 40px;
+    background-color: #2772db;
+    color: white;
+    border-radius: 4px;
+
+    .singup,
+    .singin {
+      padding: 0 3px;
+    }
+
+    &::after {
+      content: '\f0da';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      padding-left: 7px;
+    }
+  }
+
+  .nav-ul {
+    list-style: none;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+
+    > li {
+      float: left;
+      display: block;
+      padding: 5px;
+
+      &:hover, &:focus {
+        > a {
+          background-color: $nav-bg__hover;
+          color: $nav-item__hover;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: $nav-item;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      
+      .dropdown-menu {
+        li {
+          display: block;
+          float: none;
+
+          > a{
+              display: block;
+              color: $nav-item;
+
+            &:hover, &:focus {
+              background-color: $drop-item-bg__hover;
+              color: $nav-item__hover;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+  @include br(930px) {
+    .navbar-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 10px;
+    }
+
+    .nav-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      padding-top: unset;
+      z-index: 2;
+      display: block;
+      transform: translate(-100%, 0);
+      background-color: transparent;
+
+      .nav-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 0;
+        @include transition(.3s);
+      }
+
+      .nav-ul {
+        margin: 0;
+        padding-bottom: 2rem;
+        float: left;
+        width: 270px;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        background-color: $tog-header-bg;
+        overflow: auto;
+
+        > li {
+          display: block;
+          float: none;
+          color: $tog-nav-item;
+          width: 100%;
+          text-align: left;
+          padding: unset;
+
+          > a {
+            color: $tog-nav-item;
+          }
+
+          &:hover > a {
+            background-color: $tog-nav-bg__hover;      
+            color: $tog-nav-item__hover;
+          }
+          
+          &.has-dropdown {
+            &:hover {
+              background-color: transparent;
+
+              > a {
+                color:  $tog-drop-item__hover;
+              }
+            }
+
+            a::after {
+              content: none;
+            }
+
+            .dropdown-menu {
+              position: static;
+              transform: none;
+              background: transparent;
+              padding-left: 15px;
+              display: block;
+              width: auto;
+              min-width: unset;
+              box-shadow: none;
+              margin: 5px 0;
+              > li {
+                border-left: solid 1px $tog-border-drop;
+                display: block;
+                list-style: none;
+
+                > a {
+                  color: $tog-nav-item;
+                }
+
+                > a.current-menu-item, &:hover > a {
+                  color: $tog-nav-item__hover;
+                  background-color: $tog-drop-item-bg__hover;
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+
+      
+    }
+
+    .open {
+      z-index: 2;
+
+      & + .main__bot .nav-wrap {
+        transform: translate(0, 0);
+        @include transition(.3s);
+
+        .nav-overlay {
+          opacity: .7
+        }
+      }
+    }
+  }
+}

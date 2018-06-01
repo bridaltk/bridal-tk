@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /wp-content/uploads
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /tml/
+Disallow: /verify/
+Disallow: /tai-khoan/
+
+Sitemap: http://bridal-tk.com/page-sitemap.xml
+Sitemap: http://bridal-tk.com/post-sitemap.xml
+Sitemap: http://bridal-tk.com/mona_gai-sitemap.xml
