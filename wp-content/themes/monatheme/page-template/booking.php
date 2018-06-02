@@ -74,9 +74,12 @@ while (have_posts()):
     ?>
     <main>
         <div class="join section-wrap">
-            <div class="flower-right">
-                <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
-            </div>
+            <?php if (!wp_is_mobile()) : ?>
+                <div class="flower-right bot">
+                    <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
+                </div>
+            <?php endif; ?>
+
             <div class="flower-fall-2">
                 <img src="<?php echo get_site_url(); ?>/template/images/flower-fall-2.png" alt="flower">
             </div>
@@ -98,7 +101,7 @@ while (have_posts()):
                         <?php
                     } else {
                         ?>
-                        <div class="side-left" style="background: white;">
+                        <div class="side-left">
                             <?php
                             if ($success == true) {
                                 unset($_POST);
