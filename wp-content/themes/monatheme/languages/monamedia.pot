@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mona theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 15:19+0000\n"
+"POT-Creation-Date: 2018-06-02 14:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -700,10 +700,6 @@ msgstr ""
 msgid "Thông tin đăng ký gặp mặt"
 msgstr ""
 
-#: page-template/home-template.php:80 page-template/list-gai.php:349
-msgid "Tham gia"
-msgstr ""
-
 #: page-template/home-template.php:108
 msgid "Những hoạt động gần đây"
 msgstr ""
@@ -1322,4 +1318,10 @@ msgid "Customer"
 msgstr ""
 
 msgid "Tour"
+msgstr ""
+
+msgid "View Details"
+msgstr ""
+
+msgid "Tin liên quan"
 msgstr ""

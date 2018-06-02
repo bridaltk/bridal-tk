@@ -45,7 +45,7 @@ while (have_posts()):
                     <aside class="side-right">
 
                         <div class="title">
-                            <h3 class="fz-24"><?php _e('Tin liên quan'); ?></h3>
+                            <h3 class="fz-24"><?php _e('Tin liên quan', 'monamedia'); ?></h3>
                         </div>
 
                         <ul class="list">
