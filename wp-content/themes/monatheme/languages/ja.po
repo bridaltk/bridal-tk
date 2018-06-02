@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mona theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 15:19+0000\n"
-"PO-Revision-Date: 2018-06-01 15:20+0000\n"
+"POT-Creation-Date: 2018-06-02 14:55+0000\n"
+"PO-Revision-Date: 2018-06-02 14:56+0000\n"
 "Last-Translator: sirius <bridal.tk@gmail.com>\n"
-"Language-Team: 日本語\n"
+"Language-Team: Japanese\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
@@ -704,10 +704,6 @@ msgstr "すると個人情報等の記入は不要になる"
 msgid "Thông tin đăng ký gặp mặt"
 msgstr "お見合い申込内容"
 
-#: page-template/home-template.php:80 page-template/list-gai.php:349
-msgid "Tham gia"
-msgstr "詳細"
-
 #: page-template/home-template.php:108
 msgid "Những hoạt động gần đây"
 msgstr "最近のアクティビティ"
@@ -1327,3 +1323,9 @@ msgstr "顧客"
 
 msgid "Tour"
 msgstr "渡航"
+
+msgid "View Details"
+msgstr "詳細"
+
+msgid "Tin liên quan"
+msgstr "関連記事"
