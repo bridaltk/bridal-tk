@@ -9,9 +9,12 @@ while (have_posts()):
     $systems = get_field('mona_system');
     ?>
     <main>
-        <div class="flower-right bot">
-            <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
-        </div>
+        <?php if (!wp_is_mobile()) : ?>
+            <div class="flower-right bot">
+                <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
+            </div>
+        <?php endif; ?>
+
         <div class="flower-fall-2">
             <img src="<?php echo get_site_url(); ?>/template/images/flower-fall-2.png" alt="flower">
         </div>
@@ -52,7 +55,7 @@ while (have_posts()):
 
                     <div class="side-right">
 
-                        <div class="system-tag-content" style="background: white;">
+                        <div class="system-tag-content">
 
                             <?php
                             if (is_array($systems)) {

@@ -9,9 +9,12 @@ while (have_posts()):
     $about = get_field('mona_about');
     ?>
     <main>
-        <div class="flower-right bot">
-            <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
-        </div>
+        <?php if (!wp_is_mobile()) : ?>
+            <div class="flower-right bot">
+                <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
+            </div>
+        <?php endif; ?>
+
         <div class="flower-fall-2">
             <img src="<?php echo get_site_url(); ?>/template/images/flower-fall-2.png" alt="flower">
         </div>
@@ -62,7 +65,7 @@ while (have_posts()):
                                         if (is_array($item['table_item'])) {
                                             foreach ($item['table_item'] as $table) {
                                                 ?>
-                                                <div class="summary" style="background: white;">
+                                                <div class="summary">
                                                     <?php
                                                     if ($table['title'] != '') {
                                                         echo '<div class="title"><h3>' . $table['title'] . '</h3></div>';
