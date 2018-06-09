@@ -19,7 +19,7 @@ while (have_posts()):
     $hv = @$_GET['hv'];
     $per_page = @$_GET['pagi-nation'];
     $sort = @$_GET['order-by'];
-    $per = ((int) $per_page > 29 ? $per_page : 30);
+    $per = ((int) $per_page > 47 ? $per_page : 48);
     $page = get_query_var('paged');
     $page = max(1, $page);
     $offset = ($page - 1) * $per;
@@ -274,10 +274,11 @@ while (have_posts()):
                                     <div class="filter__child">
                                         <span class="icon color"><i class="fas fa-caret-down"></i></span>
                                         <select class="form-control mona-select-appent" data-name="pagi-nation">
-                                            <option <?php echo ($per_page == '30' ? 'selected' : '') ?> value="30">30</option>
-                                            <option <?php echo ($per_page == '50' ? 'selected' : '') ?> value="50">50</option>
-                                            <option <?php echo ($per_page == '80' ? 'selected' : '') ?> value="80">80</option>
-											<option <?php echo ($per_page == '100' ? 'selected' : '') ?> value="100">100</option>
+                                            <option <?php echo ($per_page == '48' ? 'selected' : '') ?> value="48">48</option>
+                                            <option <?php echo ($per_page == '72' ? 'selected' : '') ?> value="72">72</option>
+                                            <option <?php echo ($per_page == '96' ? 'selected' : '') ?> value="96">96</option>
+                                            <option <?php echo ($per_page == '120' ? 'selected' : '') ?> value="120">120</option>
+                                            <option <?php echo ($per_page == '192' ? 'selected' : '') ?> value="192">192</option>
                                         </select>
                                     </div>
                                 </div>
