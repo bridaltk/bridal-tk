@@ -196,7 +196,7 @@ function mona_add_custom_post() {
         'description' => 'Add Customer',
         'supports' => array(
             'title',
-            //  'editor',
+            'editor',
             'author',
             'thumbnail',
             'comments',
@@ -205,7 +205,7 @@ function mona_add_custom_post() {
         ),
         'taxonomies' => array(),
         'hierarchical' => false,
-        'public' => true,
+        'public' => false,
         'has_archive' => true,
         'rewrite' => array(
             'slug' => 'customer',
@@ -222,7 +222,6 @@ function mona_add_custom_post() {
         'exclude_from_search' => true,
         'publicly_queryable' => true,
         'capability_type' => 'post',
-        'capabilities' => array('create_posts' => false),
         'map_meta_cap' => true,
     );
     register_post_type('mona_khach_hang', $args);
