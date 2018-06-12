@@ -112,9 +112,12 @@ while (have_posts()):
                             if (is_array($hds)) {
                                 foreach ($hds as $item) {
                                     if ($item['mona_home_day'] != '' || $item['content'] != '') {
+                                        $ngay = $item['mona_home_day'];
+                                        $ngay = explode('/', $ngay);
+                                        $ngay = $ngay[2] . __('Năm', 'monamedia') . $ngay[1] . __('Tháng', 'monamedia') . $ngay[0] . __('Ngày', 'monamedia');
                                         ?>
                                         <li class="item">
-                                            <span class="date"><?php echo $item['mona_home_day']; ?></span>
+                                            <span class="date"><?php echo $ngay; ?></span>
                                             <div class="detail" style=" display: inline-block; "><?php echo $item['content']; ?></div>
                                         </li>   
                                         <?php
