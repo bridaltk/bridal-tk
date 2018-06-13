@@ -461,8 +461,13 @@ function mona_menu_control($items, $args) {
                             <li class="menu-item menu-item-type-post_type menu-item-object-page "><a class="mona-logout-action" href="' . wp_logout_url() . '">' . __('đăng xuất', 'monamedia') . '</a></li>
                         </ul></div></li>';
         } else {
-            $items .= '<li id="menu-item-' . MONA_LOGIN . '" class=" ' . (MONA_LOGIN == get_the_ID() ? 'current-menu-item' : '') . ' menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MONA_LOGIN . '"><a href="' . get_the_permalink(MONA_LOGIN) . '">' . __('Đăng nhập', 'monamedia') . '</a></li>';
-            $items .= '<li id="menu-item-' . MONA_REGISTER . '" class=" ' . (MONA_REGISTER == get_the_ID() ? 'current-menu-item' : '') . ' menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MONA_REGISTER . '"><a href="' . get_the_permalink(MONA_REGISTER) . '">' . __('Đăng ký', 'monamedia') . '</a></li>';
+            $items .= '<li id="menu-item-' . MY_ACCOUNT . '" class="' . (MY_ACCOUNT == get_the_ID() ? 'current-menu-item' : '') . ' menu-item-has-children has-dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MY_ACCOUNT . '"><a href="' . get_the_permalink(MY_ACCOUNT) . '">' . __('Tài khoản', 'monamedia') . '</a>';
+            $items .= '<div class="dropdown-menu"><ul class="sub-menu">
+                            <li id="menu-item-' . MONA_LOGIN . '" class=" ' . (MONA_LOGIN == get_the_ID() ? 'current-menu-item' : '') . ' menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MONA_LOGIN . '"><a href="' . get_the_permalink(MONA_LOGIN) . '">' . __('Đăng nhập', 'monamedia') . '</a></li>
+                            <li id="menu-item-' . MONA_REGISTER . '" class=" ' . (MONA_REGISTER == get_the_ID() ? 'current-menu-item' : '') . ' menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MONA_REGISTER . '"><a href="' . get_the_permalink(MONA_REGISTER) . '">' . __('Đăng ký', 'monamedia') . '</a></li>
+                        </ul></div></li>';
+            //$items .= '<li id="menu-item-' . MONA_LOGIN . '" class=" ' . (MONA_LOGIN == get_the_ID() ? 'current-menu-item' : '') . ' menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MONA_LOGIN . '"><a href="' . get_the_permalink(MONA_LOGIN) . '">' . __('Đăng nhập', 'monamedia') . '</a></li>';
+            //$items .= '<li id="menu-item-' . MONA_REGISTER . '" class=" ' . (MONA_REGISTER == get_the_ID() ? 'current-menu-item' : '') . ' menu-item menu-item-type-post_type menu-item-object-page menu-item-' . MONA_REGISTER . '"><a href="' . get_the_permalink(MONA_REGISTER) . '">' . __('Đăng ký', 'monamedia') . '</a></li>';
         }
     }
     return $items;
