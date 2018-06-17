@@ -7,6 +7,8 @@ get_header();
 while (have_posts()):
     the_post();
     $systems = get_field('mona_system');
+    $tab = @$_GET['tab'];
+    $tab = ($tab == '')? 0: (int)$tab;
     ?>
     <main>
         <?php if (!wp_is_mobile()) : ?>
@@ -38,15 +40,16 @@ while (have_posts()):
                         <ul class="list mona-nav-item-action">
                             <?php
                             if (is_array($systems)) {
-                                $active = "active";
                                 foreach ($systems as $k => $item) {
+                                    $active = ($k == $tab)? "active":'';
                                     ?>
                                     <li class="item  <?php echo $active; ?>">
                                         <div class="icon"><i class="<?php echo $item['icon']; ?>"></i></div>
-                                        <div class="info"><a class="link" href="#<?php echo 'mona-active-item-' . $k; ?>"><?php echo ($item['title']); ?></a></div>
-                                    </li>   
+                                        <div class="info"><a class="link"
+                                                             href="#<?php echo 'mona-active-item-' . $k; ?>"><?php echo($item['title']); ?></a>
+                                        </div>
+                                    </li>
                                     <?php
-                                    $active = '';
                                 }
                             }
                             ?>
@@ -59,10 +62,11 @@ while (have_posts()):
 
                             <?php
                             if (is_array($systems)) {
-                                $active = 'active';
                                 foreach ($systems as $k => $item) {
+                                    $active = ($k == $tab)? "active":'';
                                     ?>
-                                    <ul class="tag-list <?php echo $active; ?>" id="<?php echo 'mona-active-item-' . $k; ?>">
+                                    <ul class="tag-list <?php echo $active; ?>"
+                                        id="<?php echo 'mona-active-item-' . $k; ?>">
                                         <?php
                                         if (is_array($item['table_item'])) {
                                             $sub_active = 'active';
@@ -71,25 +75,25 @@ while (have_posts()):
                                                 ?>
                                                 <li class="mona-system-item <?php echo $sub_active; ?>">
                                                     <div class="nav-item">
-                                                        <div class="icon"><i class="<?php echo $tab_item['icon']; ?>"></i></div>
+                                                        <div class="icon"><i
+                                                                    class="<?php echo $tab_item['icon']; ?>"></i></div>
                                                         <div class="detail">
-                                                            <a href="javascript:;" class="item-action"><?php echo $tab_item['title']; ?></a>
+                                                            <a href="javascript:;"
+                                                               class="item-action"><?php echo $tab_item['title']; ?></a>
                                                         </div>
                                                     </div>
                                                     <div class="system-content mona-content" <?php echo $style; ?> >
                                                         <?php echo $tab_item['content']; ?>
                                                     </div>
-                                                </li>    
+                                                </li>
                                                 <?php
                                                 $style = 'style="display: none;"';
                                                 $sub_active = '';
                                             }
                                         }
                                         ?>
-
                                     </ul>
                                     <?php
-                                    $active = '';
                                 }
                             }
                             ?>
@@ -103,10 +107,10 @@ while (have_posts()):
 
 
         </div>
-    </div>
+        </div>
 
     </main>
-    <?php
+<?php
 endwhile;
 get_footer();
 ?>

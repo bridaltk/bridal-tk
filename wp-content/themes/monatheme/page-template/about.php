@@ -7,6 +7,8 @@ get_header();
 while (have_posts()):
     the_post();
     $about = get_field('mona_about');
+    $tab = @$_GET['tab'];
+    $tab = ($tab == '')? 0: (int)$tab;
     ?>
     <main>
         <?php if (!wp_is_mobile()) : ?>
@@ -38,15 +40,16 @@ while (have_posts()):
                         <ul class="list mona-nav-item-action">
                             <?php
                             if (is_array($about)) {
-                                $active = "active";
-                                foreach ($about as $k=>$item) {
+                                foreach ($about as $k => $item) {
+                                    $active = ($k == $tab)? "active":'';
                                     ?>
                                     <li class="item  <?php echo $active; ?>">
                                         <div class="icon"><i class="<?php echo $item['icon']; ?>"></i></div>
-                                        <div class="info"><a class="link" href="#<?php echo 'mona-active-menu-'.$k; ?>"><?php echo ($item['title']); ?></a></div>
-                                    </li>   
+                                        <div class="info"><a class="link"
+                                                             href="#<?php echo 'mona-active-menu-' . $k; ?>"><?php echo($item['title']); ?></a>
+                                        </div>
+                                    </li>
                                     <?php
-                                    $active = '';
                                 }
                             }
                             ?>
@@ -57,10 +60,11 @@ while (have_posts()):
                         <ul class="list system-tag-content mona-about">
                             <?php
                             if (is_array($about)) {
-                                $active = "active";
-                                foreach ($about as $k=>$item) {
+                                foreach ($about as $k => $item) {
+                                    $active = ($k == $tab)? "active":'';
                                     ?>
-                                    <li class="mona-item tag-list <?php echo $active; ?>" id="<?php echo 'mona-active-menu-'.$k; ?>">
+                                    <li class="mona-item tag-list <?php echo $active; ?>"
+                                        id="<?php echo 'mona-active-menu-' . $k; ?>">
                                         <?php
                                         if (is_array($item['table_item'])) {
                                             foreach ($item['table_item'] as $table) {
@@ -92,7 +96,7 @@ while (have_posts()):
                                                                             ?>
 
 
-                                                                        </div>    
+                                                                        </div>
                                                                         <?php
                                                                     }
                                                                     if ($content['content'] != '') {
@@ -101,7 +105,7 @@ while (have_posts()):
                                                                     ?>
 
 
-                                                                </li>    
+                                                                </li>
                                                                 <?php
                                                             }
                                                         }
@@ -113,15 +117,14 @@ while (have_posts()):
                                                 <div class="br br-small">
                                                     <i class="diamond"></i>
                                                     <i class="diamond"></i>
-                                                </div>    
+                                                </div>
                                                 <?php
                                             }
                                         }
-                                        ?>        
+                                        ?>
 
-                                    </li>    
+                                    </li>
                                     <?php
-                                    $active='';
                                 }
                             }
                             ?>
@@ -137,7 +140,7 @@ while (have_posts()):
         </div>
 
     </main>
-    <?php
+<?php
 endwhile;
 get_footer();
 ?>
