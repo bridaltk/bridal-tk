@@ -91,6 +91,11 @@ while (have_posts()):
 
                         </ul>
                     </div>
+                    <div class="rơw100">
+                        <div class="mona-content">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
                 </div>
 
             </div>
