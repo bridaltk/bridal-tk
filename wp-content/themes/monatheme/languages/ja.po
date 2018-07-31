@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mona theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 14:55+0000\n"
-"PO-Revision-Date: 2018-06-02 14:56+0000\n"
+"POT-Creation-Date: 2018-06-07 15:27+0000\n"
+"PO-Revision-Date: 2018-06-07 15:28+0000\n"
 "Last-Translator: sirius <bridal.tk@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -1329,3 +1329,42 @@ msgstr "詳細"
 
 msgid "Tin liên quan"
 msgstr "関連記事"
+
+msgid "Active Members"
+msgstr "在籍会員数"
+
+msgid "Married Couples"
+msgstr "成婚件数"
+
+msgid "Successful Rate"
+msgstr "成功率"
+
+msgid "Current number of our active members"
+msgstr "現在当社サイトに在籍している会員数"
+
+msgid "Number of our successfully married couples"
+msgstr "当社サービスを通して結婚した件数"
+
+msgid "The rate of successfully couples per number of meeting"
+msgstr "お見合い渡航の全員の中で成婚できた割合"
+
+msgid "Inquity about this member"
+msgstr "この会員に関する問い合わせ"
+
+msgid "Apply for meeting"
+msgstr "お見合い申し込み"
+
+msgid "Choose 1 of the following methods"
+msgstr "次の方法をいずれか一つ選んでください。"
+
+msgid "Call us"
+msgstr "電話で申し込み"
+
+msgid "Email to us"
+msgstr "メールで申し込み"
+
+msgid "Complete the following form"
+msgstr "下記のフォームに記入し送信"
+
+msgid "Xin cảm ơn, form đã được gửi thành công."
+msgstr "問い合わせ内容は送信されました。後ほどご連絡しますので少々お待ちください。"

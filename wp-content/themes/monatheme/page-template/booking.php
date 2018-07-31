@@ -73,7 +73,7 @@ while (have_posts()):
     }
     ?>
     <main>
-        <div class="join section-wrap">
+        <div class="account  section-wrap">
             <?php if (!wp_is_mobile()) : ?>
                 <div class="flower-right bot">
                     <img src="<?php echo get_site_url(); ?>/template/images/flower-right.png" alt="bg flower">
@@ -91,6 +91,32 @@ while (have_posts()):
                 </div>
 
                 <div class="join-detail__content clear">
+                    <div class="side-left">
+
+                    <ul class="list">
+                        <li class="item " >
+                            <div class="icon"><i class="fas fa-fw fa-user"></i></div>
+                            <div class="info"><h4 class="fz-18"><a href="<?php echo get_the_permalink(MY_ACCOUNT); ?>"><?php _e('Quản lý tài khoản', 'monamedia'); ?></a></h4></div>
+                        </li>
+                        <li class="item ">
+                            <div class="icon"><i class="far fa-fw fa-clock"></i></div>
+                            <div class="info"><h4 class="fz-18"><a href="<?php echo get_the_permalink(MY_ACCOUNT); ?>/chuyen-di/"><?php _e('Chuyến đi', 'monamedia');   ?></a></h4></div>
+                        </li>
+                        <li class="item active">
+                            <div class="icon"><i class="far fa-address-card"></i></div>
+                            <div class="info"><h4 class="fz-18"><a href="<?php echo get_the_permalink(MONA_BOOKING);   ?>"><?php _e('Đăng ký gặp mặt', 'monamedia');   ?></a></h4></div>
+                        </li>
+                        <li class="item " >
+                            <div class="icon"><i class="fas fa-fw fa-lock"></i></div>
+                            <div class="info"><h4 class="fz-18"><a href="<?php echo get_the_permalink(MY_ACCOUNT); ?>/doi-mat-khau/"><?php _e('Thay đổi mật khẩu', 'monamedia'); ?></a></h4></div>
+                        </li>
+                        <li class="item">
+                            <div class="icon"><i class="fas fa-fw fa-sign-out-alt"></i></div>
+                            <div class="info"><h4 class="fz-18"><a class="mona-logout-action" href="<?php echo wp_logout_url(get_home_url()); ?>"><?php _e('Đăng xuất', 'monamedia'); ?></a></h4></div>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="side-right join">
                     <?php
                        
                     if (is_user_logged_in() && (!in_array('mona_khac_hang', $u->roles) || mona_iswp_error($post_id) || @$post_id == '')) {
@@ -101,7 +127,7 @@ while (have_posts()):
                         <?php
                     } else {
                         ?>
-                        <div class="side-left">
+                        
                             <?php
                             if ($success == true) {
                                 unset($_POST);
@@ -120,14 +146,14 @@ while (have_posts()):
                                 </div>
                                 <?php
                                 if (!is_user_logged_in()) {
-                                    ?><div class="note"><strong><i style="color: red;">＊</i><?php _e(' Note:', 'monamedia'); ?> </strong><em><?php _e(' bạn có thể ', 'monamedia'); ?><a href="<?php echo get_the_permalink(MONA_LOGIN); ?>?redierect=<?php echo '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" style=" color: #2748a3; font-weight: bold; "><?php _e('đăng nhập', 'monamedia'); ?></a> <?php _e('để rút ngắn các giá trị cần điền', 'monamedia'); ?></em></div><?php
-                                }
+                                    ?><div class="note"><strong><i style="color: red;">＊</i><?php _e(' Note:', 'monamedia'); ?> </strong><em><?php _e(' Bạn phải ', 'monamedia'); ?><a href="<?php echo get_the_permalink(MONA_LOGIN); ?>?redierect=<?php echo '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" style=" color: #2748a3; font-weight: bold; "><?php _e('đăng nhập', 'monamedia'); ?></a> <?php _e(' để tiếp tục thao tác', 'monamedia'); ?></em></div><?php
+                                }else{
                                 ?>
 
                                 <form method="post" action="" enctype="multipart/form-data" id="mona-booking-form-submit">
                                     <?php
                                     if (!is_user_logged_in()) {
-                                        get_template_part('patch/booking', 'login');
+                                       // get_template_part('patch/booking', 'login');
                                     }
                                     ?>
                                     <div class="box__input">
@@ -205,17 +231,19 @@ while (have_posts()):
                                     </div>
                                     <div class="box__input">
                                         <div class="button input__child full">
-                                            <button type="submit" id="mona-submit-button" class="btn btn-1"><?php _e('Đăng ký gặp mặt', 'monamedia'); ?></button>
+                                            <button type="submit" id="mona-submit-button" class="btn btn-1 btn-fullw"><?php _e('Đăng ký gặp mặt', 'monamedia'); ?></button>
                                         </div>
                                     </div>
                                 </form>
-                            <?php } ?>
-                        </div>
+                            <?php }
+                            }?>
+                        
 
 
                         <?php
                     }
                     ?>
+                      </div>              
                 </div>
 
             </div>

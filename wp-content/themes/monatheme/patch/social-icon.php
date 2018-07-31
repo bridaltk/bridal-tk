@@ -1,7 +1,7 @@
-    <?php echo(mona_option('mona_sticky_header_twitter','') !=''? '<div class="tw item"><a href="'.mona_option('mona_sticky_header_twitter','').'" target="_blank" class="btn" ><i class="fab fa-twitter"></i> Twitter</a></div>':'');?>
-    <?php echo(mona_option('mona_sticky_header_facebook','') !=''? '<div class="fb item"><a href="'.mona_option('mona_sticky_header_facebook','').'" target="_blank" class="btn" ><i class="fab fa-facebook-f"></i> Facebook</a></div>':'');?>
-    <?php echo(mona_option('mona_sticky_header_goolgeplus','') !=''? '<div class="gplus item"><a href="'.mona_option('mona_sticky_header_goolgeplus','').'" target="_blank" class="btn" ><i class="fa fa-google-plus"></i> Google Plus</a></div>':'');?>
-     <?php echo(mona_option('mona_sticky_header_instagram','') !=''? '<div class="ins item"><a href="'.mona_option('mona_sticky_header_instagram','').'" target="_blank" class="btn" ><i class="fa fa-instagram"></i> Instagram</a></div>':'');?>
-    <?php echo(mona_option('mona_sticky_header_youtube','') !=''? '<div class="you item"><a href="'.mona_option('mona_sticky_header_youtube','').'" target="_blank" class="btn" ><i class="fa fa-youtube-play"></i> Youtube</a></div>':'');?>
-    <?php echo(mona_option('mona_sticky_header_linkedin','') !=''? '<div class="link item"><a href="'.mona_option('mona_sticky_header_linkedin','').'" target="_blank" class="btn" ><i class="fa fa-linkedin-square"></i> Linkedin</a></div>':'');?>
-
+    <?php echo(mona_option('mona_sticky_header_twitter','') !=''? '<div class="tw item"><a href="'.mona_option('mona_sticky_header_twitter','').'" target="_blank" class="btn" ><i class="fab fa-twitter"></i> Twitter</a></div>':'');?>
+    <?php echo(mona_option('mona_sticky_header_facebook','') !=''? '<div class="fb item"><a href="'.mona_option('mona_sticky_header_facebook','').'" target="_blank" class="btn" ><i class="fab fa-facebook-f"></i> Facebook</a></div>':'');?>
+    <?php echo(mona_option('mona_sticky_header_goolgeplus','') !=''? '<div class="gplus item"><a href="'.mona_option('mona_sticky_header_goolgeplus','').'" target="_blank" class="btn" ><i class="fa fa-google-plus"></i> Google Plus</a></div>':'');?>
+     <?php echo(mona_option('mona_sticky_header_instagram','') !=''? '<div class="ins item"><a href="'.mona_option('mona_sticky_header_instagram','').'" target="_blank" class="btn" ><i class="fa fa-instagram"></i> Instagram</a></div>':'');?>
+    <?php echo(mona_option('mona_sticky_header_youtube','') !=''? '<div class="you item"><a href="'.mona_option('mona_sticky_header_youtube','').'" target="_blank" class="btn" ><i class="fa fa-youtube-play"></i> Youtube</a></div>':'');?>
+    <?php echo(mona_option('mona_sticky_header_linkedin','') !=''? '<div class="link item"><a href="'.mona_option('mona_sticky_header_linkedin','').'" target="_blank" class="btn" ><i class="fa fa-linkedin-square"></i> Linkedin</a></div>':'');?>
+
