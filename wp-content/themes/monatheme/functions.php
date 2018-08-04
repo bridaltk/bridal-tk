@@ -138,7 +138,7 @@ function mona_style() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('mona-SmoothScroll', get_template_directory_uri() . '/js/SmoothScroll.js', array(), false, true);
     wp_enqueue_style('mona-magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
-    wp_enqueue_style('mona-custom', get_template_directory_uri() . '/css/mona-custom.css?ver=1.04');
+    wp_enqueue_style('mona-custom', get_template_directory_uri() . '/css/mona-custom.css?ver=1.05');
     wp_enqueue_script('mona-magnific', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array(), false, true);
     wp_enqueue_script('mona-comment', get_template_directory_uri() . '/js/libs.js', array(), false, true);
     wp_enqueue_script('mona-front', get_template_directory_uri() . '/js/front.js', array(), false, true);
