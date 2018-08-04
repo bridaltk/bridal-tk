@@ -448,7 +448,9 @@ function mona_filter_hv_user($stt) {
 }
 
 function mona_send_email_veryfi($user_login) {
-
+    if(MONA_NOT_SEND==true){
+        return;
+    }
     $user = get_user_by('login', $user_login);
 
     if (!$user) {
@@ -472,6 +474,9 @@ function mona_send_email_veryfi($user_login) {
 }
 
 function mona_check_has_verify($login) {
+    if(MONA_NOT_SEND==true){
+        return true;
+    }
     $user = get_user_by('login', $login);
 
     if (!$user) {

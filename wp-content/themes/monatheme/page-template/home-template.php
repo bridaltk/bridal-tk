@@ -112,9 +112,12 @@ while (have_posts()):
                             if (is_array($hds)) {
                                 foreach ($hds as $item) {
                                     if ($item['mona_home_day'] != '' || $item['content'] != '') {
+                                        $ngay = $item['mona_home_day'];
+                                        $ngay = explode('/', $ngay);
+                                        $ngay = $ngay[2] . __('Năm', 'monamedia') . $ngay[1] . __('Tháng', 'monamedia') . $ngay[0] . __('Ngày', 'monamedia');
                                         ?>
                                         <li class="item">
-                                            <span class="date"><?php echo $item['mona_home_day']; ?></span>
+                                            <span class="date"><?php echo $ngay; ?></span>
                                             <div class="detail" style=" display: inline-block; "><?php echo $item['content']; ?></div>
                                         </li>   
                                         <?php
@@ -133,7 +136,108 @@ while (have_posts()):
                 </div>
             </div>
         </div>
+        <div class="mona-about-item">
+            <?php
+            $secs = get_field('mona_home_about_f');
+            if (is_array($secs)) {
+                $class='sec-left';
+                foreach ($secs as $item) {
+                    ?>
+                    <div class="sec-wrap mona-about-sec mona-home-about-sec <?php echo $class; ?>">
+                        <div class="all">
+                            <div class="sec-pad ">
+                                <div class="block-2-col img-dt">
+                                    <div class="img">
+                                        <?php
+                                        echo wp_get_attachment_image($item['image'], 'slider-full');
+                                        ?>
+                                    </div>
+                                    <div class="detail mona-content">
+                                        <div class="mona-content ">
+                                            <?php echo $item['description']; ?>
+                                        </div>
+                                        <div class="button mona-home-about-btn">
+                                        <?php
+                                        if ($item['button_text1'] != '') {
+                                            $color ='';
+                                            if($item['button_url1_color'] !=''){
+                                                $color ='style="background:'.$item['button_url1_color'].';"';
+                                            }
+                                            echo '<a href="' . esc_url($item['button_url1']) . '" '.$color.' class="btn btn-1">' . $item['button_text1'] . '</a>';
+                                        }
+                                        ?>
+                                        <?php
+                                        if ($item['button_text2'] != '') {
+                                             $color ='';
+                                            if($item['button_url2_color'] !=''){
+                                                $color ='style="background:'.$item['button_url2_color'].';"';
+                                            }
+                                            echo '<a href="' . esc_url($item['button_url2']) . '" '.$color.' class="btn btn-1">' . $item['button_text2'] . '</a>';
+                                        }
+                                        ?>
+ </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            <div class="all">
+            <div class="br ">
+                    <i class="diamond"></i>
+                    <i class="diamond"></i>
+                </div>
+                 </div>
+                    <?php
+                    if($class=='sec-left'){
+                        $class='sec-right';
+                    }else{
+                        $class=='sec-left';
+                    }
+                }
+            }
+            ?>
+        </div>
+        <div class="achievement">
+            <div class="all">
+                <div class="achievement-list-wrap">
+                    <?php
+                    $counts = get_field('counting');
+                    if(is_array($counts)){
+                        foreach ($counts as $item){
+                            ?>
+                            <div class="achievement-item">
+                        <div class="img">
+                            <?php
+                            if($item['icon']!=''){
+                                echo wp_get_attachment_image($item['icon'], 'full');
+                            }
+                            ?>
+                           </div>
+                        <div class="aif">
+                            <p class="lb"><?php echo $item['title'];?></p>
+                            <?php
+                            $color='';
+                            if($item['number_color'] !=''){
+                                $color = 'style="color:'.$item['number_color'].'"';
+                            }
+                            ?>
+                            <p class="num" <?php echo $color; ?>><?php echo $item['number'];?></p>
+                        </div>
+                    </div>    
+                            <?php
+                        }
+                    }
+                    ?>
+                    
+                </div>
 
+                <div class="br">
+                    <i class="diamond"></i>
+                    <i class="diamond"></i>
+                </div>
+            </div>
+        </div>
         <div class="newmem">
             <div class="all">
 

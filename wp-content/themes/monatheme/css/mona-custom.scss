@@ -1,3 +1,11 @@
+.mona-content{
+    b{
+        font-weight: bold;
+    }
+    i,em{
+        font-style: italic;
+    }
+}
 .select2-results__option[aria-selected=true] {
     display: none;
 }
@@ -27,7 +35,7 @@ primary-btn.small-btn{
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
         }
-        .current-menu-item{
+        .current-menu-item,.current-menu-parent{
             >a{
                 background-color: rgba(39, 114, 219, 0.8);
                 color: white!important;  
@@ -35,7 +43,8 @@ primary-btn.small-btn{
         } 
     }
 }
-#header .nav-ul > li.current-menu-item > a{
+#header .nav-ul > li.current-menu-item > a,
+#header .nav-ul > li.current-menu-parent > a{
     background-color: rgba(39, 114, 219, 0.8);
     color: white;  
 }
@@ -974,7 +983,7 @@ main.main{
         margin-bottom: 0px;
     }
     .line{
-        width: 120px;
+        width: 160px;
         max-width: 100%;
         display: inline-block;
         &.img{
@@ -1243,7 +1252,7 @@ main.main{
         margin-bottom: 10px;
         width: 100%;
         td{
-            border: 1px solid #e1e1e1;
+            border: 1px solid #d7d7d7;
             padding: 5px;
         }
     }
@@ -1426,7 +1435,7 @@ header#header.sticky,.home header#header.sticky{
                     clear: left;
                 }
             }
-            @media screen and (max-width:420px){
+            @media screen and (max-width:400px){
                 width: 100%;
                 &:nth-child(4n)+.mona-gai-item-loop{
                     clear: none;
@@ -1571,8 +1580,568 @@ header#header.sticky,.home header#header.sticky{
     }
 }
 .mona-schedule-pop.mona-popup-main .mfp-container .mfp-content{
-       overflow: auto;
+    overflow: auto;
 }
 .mona-popup-main .mfp-container{
     position: fixed;
 }
+.mona-nav-item-actions .menu li{
+    list-style: none;
+    padding: 5px;
+    padding-right: 25px;
+    font-weight: 600;
+    align-items: center;
+    position: relative;
+}
+.mona-nav-item-actions .menu li a{
+    display: block;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+.mona-nav-item-actions .menu li a:before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: "\f023";
+    line-height: 36px;
+    text-align: center;
+    margin-right: 5px;
+    border: 2px dashed #000000;
+}
+.mona-nav-item-actions .menu li.current-menu-item a:before,
+.mona-nav-item-actions .menu li:hover a:before{
+    border: 2px dashed #2772db;
+}
+.mona-nav-item-actions .menu li.current-menu-item a,
+.mona-nav-item-actions .menu li:hover a
+{
+    color: #2772db;
+}
+#header{
+    .has-dropdown.mona-full-width{
+        position: static;
+        &.current-menu-parent,&.current-menu-item{
+            .dropdown-menu{
+                /*                display: block;
+                                -webkit-transform: perspective(1200px) rotateX(0deg);
+                                transform: perspective(1200px) rotateX(0deg); */
+            } 
+        }
+        .dropdown-menu{
+            box-shadow: none;
+            background: transparent;
+            width: 100%;
+            top: 41px;
+        }
+        .sub-menu{
+            text-align: left;
+            box-shadow: none;
+            margin-top: 5px;
+            background: #fff;
+            border-radius: 5px;  
+            li{
+                display: inline-block;
+                @media screen and (max-width:930px){
+                    display:block;
+                }
+            }
+        }
+    }
+}
+
+.mona-nav-item-actions.mona-system-menu .menu li a:before{
+    content: "\f184";
+    font-family: Font Awesome\ 5 Brands;
+}
+#header .has-dropdown:hover .dropdown-menu{
+    z-index: 999999;
+}
+#header{
+    background: transparent;
+}
+.mona-about-sec {
+    &:first-child .sec-pad{
+        padding-top: 0;
+    }
+    .sec-pad{
+        padding: 50px 0;
+
+    }
+    &:nth-child(2n){
+        background: #f8f8f8; 
+        .block-2-col.img-dt .img{
+            float: right;
+        }
+        .block-2-col.img-dt .detail{
+            float: left;
+            padding-left: 0;
+            padding-right: 30px;
+        }
+    }
+}
+.mona-content{
+    ul{
+        padding-left: 0;
+        counter-reset: section;
+        list-style:none;
+        li{
+            padding-left: 25px;
+            &:before{
+                color: #2772db;
+                content: "\f0da";
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                display: inline-block;
+                margin-left: -15px;
+                float: left;
+            }
+        }
+    }
+    p{
+        padding-bottom: 0;
+        margin-bottom: 15px;
+
+    }
+    table{
+        max-width: 100%;
+    }
+    table td,table th{
+        padding: 10px;
+        vertical-align: middle;
+    }
+    &.content-table{
+        table{
+            tr{
+                &:first-child{
+                    td{
+                        background-color: #e1e1e1;
+                        font-weight: 500;
+                        color: #000;
+                    }
+
+                }
+                &:nth-child(odd){
+                    background-color: #ebebeb; 
+                }
+                td{
+                    padding: 12px 20px;
+                }
+            }
+        }
+
+        ol{
+            padding-left: 0;
+            counter-reset: section;
+            list-style:none;
+            li{
+                padding: 10px 0;
+                padding-left: 50px;
+                &:before{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 28px;
+                    font-size: 18px;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: white;
+                    font-weight: 600;
+                    counter-increment: section;
+                    content: counter(section);
+                    margin-right: 10px;
+                    margin-left: -40px;
+                    float: left;
+                    color: #2772db;
+                    border: 2px solid #2772db;
+                    background-color: white;
+                }
+            }
+        }
+    }  
+}
+.mona-about-content{
+    ol{
+        padding-left: 0;
+        counter-reset: section;
+        list-style:none;
+        li{
+            padding: 10px 0;
+            padding-left: 75px;
+            &:before{
+                display: inline-block;
+                vertical-align: top;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 18px;
+                border-radius: 50%;
+                text-align: center;
+                color: white;
+                font-weight: 600;
+                counter-increment: section;
+                content: counter(section);
+                margin-right: 0;
+                margin-left: -65px;
+                float: left;
+                color: #fff;
+                border: 2px solid #2772db;
+                background-color: #2772db;
+            }
+        }
+    }
+}
+.mona-span-avt{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 70px;
+}
+.callvn-table{
+    border: none;
+}
+.hd-abso{
+    #header{
+        .nav-ul{
+            li{
+                a{
+                    @media screen and (min-width: 931px){
+                         color: #fff;
+                    }
+                   
+                }
+            }
+        }   
+    }
+
+}
+.row100.mona-term{
+    margin-top: 30px;
+}
+.list-term.mona-term{
+    overflow: hidden;
+    margin: auto;
+    max-width: 100%;
+    .item{
+        width: 50%;
+        list-style: none;
+        float: left;
+        margin-bottom: 30px;
+        @media screen and(max-width:580px){
+            width:100%;
+        }
+        .term-wrap{
+            padding: 0 30px;
+            .avt{
+                width: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                height: 200px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+            .name{
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .position{
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #00ccff;
+            }
+        }
+    } 
+}
+.widget_nav_menu{
+    ul{
+        li{
+            list-style: none;
+            padding-left: 25px;  
+            &:before{
+                color: #2772db;
+                content: "\f0da";
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                display: inline-block;
+                margin-left: -15px;
+                float: left;
+            }
+        }
+    }
+}
+.flower-fall-2,.flower-right{
+    display: none ;
+}
+.stepst-header .step-hd__ct .hd
+{
+    color: #ff3a57;  
+}
+.stepst-block .c-ct .hd{
+    color: #2771db; 
+    font-weight: bold;
+}
+.mona-home-about-sec.mona-about-sec .sec-pad{
+    padding: 0
+}
+mona-home-about-btn a+a{
+   // margin-left: 5px;
+}
+.mona-contet-policy{
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #d6d6d6;   
+}
+#mona-register-form-submit .mona-action-register{
+    .left{
+        float: left;
+        text-align: left;
+        width: inherit;
+        padding: 10px 20px;
+        .fas{
+            margin-right: 10px;
+        }
+    }
+    .right{
+        float: right;
+        text-align: right;
+        width: inherit;
+        padding: 10px 30px;
+        .fas{
+            margin-left: 10px;
+        }
+    }
+    a{
+
+    }
+}
+.mona-xac-nhan-thong-tin{
+    min-height: 300px;
+    position: relative;
+    &.loading{
+        &:before{
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        &:after{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: (50%);
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            content: "\f110";
+            -webkit-animation: spin 0.8s linear infinite;
+            animation: spin 0.8s linear infinite;
+            color: #fff;
+            font-size: 40px;
+        }
+    }
+}
+.mona-fix-670{
+    width: 670px;
+    max-width: 100%;
+}
+.button{
+    .btn+.btn{
+        //margin-left: 5px;
+    }
+}
+.btn-fullw{
+    width: 100%;
+}
+.sec-table{
+    margin-bottom:30px;
+    table{
+        width: 100%;
+        td{
+            padding: 5px;
+            border: 1px solid #d0d0d0;  
+        }
+    }
+}
+.notitle{
+    color: transparent;
+}
+.mona-table-xnhv{
+    h6{
+        font-size: inherit;   
+    }
+}
+.mona-content{
+    small{
+        font-size: 0.8em;
+    }
+}
+div.wpcf7-response-output{
+    position: relative;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.upload-wrap span.wpcf7-list-item{
+    margin: 0;
+    margin-top: 10px
+
+}
+.upload-wrap .mona-contet-policy{
+    padding: 5px;
+}
+.mona-home-about-sec.sec-right{
+    .block-2-col.img-dt .img{
+        float: right;
+    }
+    .block-2-col.img-dt .detail{
+        float: left;
+        padding-left: 0;
+        padding-right: 30px;
+        @media screen and (max-width: 780px){
+            padding-right: 0px;
+        }
+    }
+}
+.mona-about-sec:nth-child(2n) .block-2-col.img-dt .detail{
+    @media screen and (max-width: 780px){
+        padding-right: 0px;
+    } 
+}
+.ft__child .menu a,
+.mona-content ul li{
+    line-height: 1.7
+}
+.mona-home-about-btn{
+    a{
+        margin-bottom: 5px;
+    }
+}
+.button a{
+    margin-bottom: 5px;
+}
+@media screen and(max-width:480px){
+    .achievement-item .aif .num{
+        font-size: 40px;
+    }
+}
+.mona-bg{
+      background: #205ab1;
+    color: #fff;  
+}
+.sec-table{
+       font-size: 20px; 
+}
+@media screen and (max-width: 780px)
+{
+    .block-2-col .button {
+    text-align: left;
+}
+}
+
+.achievement-list-wrap{
+    display: inline-block;
+    width: 100%;
+}
+.achievement-list-wrap .achievement-item{
+    float: left;
+    width: 33.333%;
+    padding: 15px;
+    text-align: center;
+}
+.achievement-item .img{
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+.achievement-item .aif{
+    
+}
+.achievement-item .aif .lb{
+    color: #707070;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.achievement-item .aif .num{
+    font-size: 60px;
+    color: #181f27;
+    line-height: 1;
+}
+.mona-comment-no-login .form-submit #submit{
+    height: auto;
+}
+.box__input .input__child .select2 .select2-selection__rendered{
+    height: auto;
+}
+.cont-570px{
+    width: 570px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.mynav-tab{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+.nv-item{
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+    background-color: #2772db;
+    color: #fff;
+    line-height: 20px;
+    padding: 10px;
+}
+.nv-item + .nv-item{
+    border-left: solid 1px #fff;
+}
+.nv-item:hover,
+.nv-item.active{
+    background-color: #1e5bb1;
+    color: #fff;
+}
+#mona-register-form-submit .btn.btn-1{
+    line-height: 20px;
+    padding: 10px 15px;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.tab-cont-wrap .tab-item{
+    display: none;
+}
+.tab-cont-wrap .tab-item.active{
+    display: block;
+}
+@media screen and (max-width: 480px) {
+  .achievement-item .aif .num {
+    font-size: 40px; } 
+	}
