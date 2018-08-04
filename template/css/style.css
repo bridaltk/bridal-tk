@@ -19,6 +19,8 @@
     content: " ";
 }
 
+
+
 ::-moz-selection {
     background: rgba(39, 114, 219, 0.5);
 }
@@ -35,7 +37,7 @@ html {
 
 body {
     color: #898989;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
 }
@@ -623,7 +625,7 @@ textarea.form-control {
 }
 
 #header .hd-left {
-    width: 35%;
+    width: 25%;
     border-right: 1px solid #e3e3e3;
     height: 180px;
     float: left;
@@ -732,7 +734,7 @@ textarea.form-control {
 
 #header .hd-main {
     display: block;
-    width: 65%;
+    width: 75%;
     float: right;
     height: 180px;
 }
