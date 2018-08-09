@@ -542,10 +542,10 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
         $hv = $gais->get_hoc_van();
         $hv = $gais->get_format_label($hv);
 
-        $output .= '<div class="item mona-gai-item-loop '.$stt.'">"';
+        $output .= '<div class="item mona-gai-item-loop '.$stt.'">';
         $output .= '<div class="img">';
         $output .= '<span class="status '.$stt.'" type-status="New">'.$honnhan.'</span>';
-        $output .= '<a href="'.get_the_permalink($post_id).'">"';
+        $output .= '<a href="'.get_the_permalink($post_id).'">';
         $output .= '<span class="mona-thumb-img" style="background-image: url('.get_the_post_thumbnail_url($post_id, 'medium').'")></span>"';
         $output .= '</a>';
         $video = get_field('mona_gai_video_url', $post_id);
