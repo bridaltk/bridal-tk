@@ -272,9 +272,35 @@ while (have_posts()):
         </div>
         <div class="newmem">
             <div class="all">
-
                 <div class="title">
                     <p class="fz-36 f-title" style="font-weight: bold;"><?php _e('Hội viên được chú ý', 'monamedia'); ?></p>
+                </div>
+                <div class="newmem-slide">
+                    <?php
+                    if (function_exists('wpp_get_mostpopular')) {
+                        $arg = array (
+                            'range' => 'weekly',//集計する期間
+                            'order_by' => 'views',//閲覧数で集計
+                            'post_type' => 'mona_gai',//ポストタイプを指定
+                            'limit' => 20, //表示数
+                        );
+                        wpp_get_mostpopular($arg);
+                    }
+                    ?>
+                </div>
+
+                <div class="br">
+                    <i class="diamond"></i>
+                    <i class="diamond"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="newmem">
+            <div class="all">
+
+                <div class="title">
+                    <p class="fz-36 f-title" style="font-weight: bold;"><?php _e('Staff recommendation', 'monamedia'); ?></p>
                 </div>
 
                 <div class="newmem-slide">

@@ -1,20 +1,20 @@
 <footer id="footer">
     <div class="all">
-      <div class="ft-infos clear">
+        <div class="ft-infos clear">
 
-        <div class="ft__child name mona-w30">
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_1')) : ?><?php endif; ?>
+            <div class="ft__child name mona-w30">
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_1')) : ?><?php endif; ?>
+            </div>
+            <div class="ft__child contact-form mona-w40">
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_2')) : ?><?php endif; ?>
+            </div>
+            <div class="ft__child social mona-w30">
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_3')) : ?><?php endif; ?>
+            </div>
         </div>
-        <div class="ft__child contact-form mona-w40">
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_2')) : ?><?php endif; ?>
-        </div>
-        <div class="ft__child social mona-w30">
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_3')) : ?><?php endif; ?>
-        </div>
-      </div>
     </div>
     <div class="ft-sys center-txt clear">
-        <?php echo mona_option('mona_coppyright'); ?>    
+        <?php echo mona_option('mona_coppyright'); ?>
     </div>
 </footer>
 
@@ -27,9 +27,11 @@
 <!--<script async="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_roqaeKE7ULRUNw5wG0i8TqvWRsSJ2JY&amp;callback=loadGoogleMap"></script>-->
 <?php
 
-if(is_page_template('page-template/thong-tin-cong-ty.php')){
-    ?><script async="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_roqaeKE7ULRUNw5wG0i8TqvWRsSJ2JY&amp;callback=loadGoogleMap2"></script>
-<?php
+if (is_page_template('page-template/thong-tin-cong-ty.php')) {
+    ?>
+    <script async="" type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_roqaeKE7ULRUNw5wG0i8TqvWRsSJ2JY&amp;callback=loadGoogleMap2"></script>
+    <?php
 }
 ?>
 <?php wp_footer(); ?>
