@@ -138,10 +138,10 @@ function mona_style() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('mona-SmoothScroll', get_template_directory_uri() . '/js/SmoothScroll.js', array(), false, true);
     wp_enqueue_style('mona-magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
-    wp_enqueue_style('mona-custom', get_template_directory_uri() . '/css/mona-custom.css?ver=1.05');
+    wp_enqueue_style('mona-custom', get_template_directory_uri() . '/css/mona-custom2.css?ver=1.05');
     wp_enqueue_script('mona-magnific', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array(), false, true);
     wp_enqueue_script('mona-comment', get_template_directory_uri() . '/js/libs.js', array(), false, true);
-    wp_enqueue_script('mona-front', get_template_directory_uri() . '/js/front.js', array(), false, true);
+    wp_enqueue_script('mona-front', get_template_directory_uri() . '/js/front2.js', array(), false, true);
     wp_localize_script('mona-front', 'mona_ajax_url', array('ajaxURL' => admin_url('admin-ajax.php'), 'siteURL' => get_site_url()));
 }
 
@@ -524,3 +524,56 @@ function mona_admin_bar($bar){
     return false;
 }
 add_filter('show_admin_bar','mona_admin_bar');
+
+function my_custom_popular_posts_html_list( $mostpopular, $instance ){
+    $output = '';
+    // loop the array of popular posts objects
+    foreach( $mostpopular as $popular ) {
+        $post_id = $popular->id;
+        $gais = new Mona_gai($post_id);
+        $tuoi = $gais->get_tuoi();
+        $ms = $gais->get_ms();
+        $nghenghiep = $gais->get_nghe_nghiep();
+        $honnhan = mona_gai_status($post_id);
+        $stt = get_field('mona_gai_hon_nhan', $post_id);
+        $day = $gais->get_day();
+        $day = explode('/', $day);
+        $tinh = $gais->get_tinh();
+        $hv = $gais->get_hoc_van();
+        $hv = $gais->get_format_label($hv);
+
+        $output .= '<div class="item mona-gai-item-loop '.$stt.'">';
+        $output .= '<div class="img">';
+        $output .= '<span class="status '.$stt.'" type-status="New">'.$honnhan.'</span>';
+        $output .= '<a href="'.get_the_permalink($post_id).'">';
+        $output .= '<span class="mona-thumb-img" style="background-image: url('.get_the_post_thumbnail_url($post_id, 'medium').'")></span>"';
+        $output .= '</a>';
+        $video = get_field('mona_gai_video_url', $post_id);
+        if ($video != '') {
+            $l = __('Có video', 'monamedia');
+            $output .= '<span class="status-video">'.$l.'</span>';
+        }
+        $output .= '</div><div class="info clear">';
+        $output .= '<p class="mona-user-info"><a href="'.get_the_permalink($post_id).'">'.$ms.'</a></p>';
+
+        if ($day != '') {
+            $output .= '<p class="mona-user-info">' . $day[1] . __('Tháng', 'monamedia') . $day[0] . __('Ngày', 'monamedia') . '</p>';
+        }
+        if ($tuoi != '') {
+            $output .= '<p class="mona-user-info">' . $tuoi . '</p>';
+        }
+        if ($tinh != '') {
+            $output .= '<p class="mona-user-info">' . $tinh . '</p>';
+        }
+        if ($hv != '') {
+            $output .= '<p class="mona-user-info">' . $hv . '</p>';
+        }
+        if ($nghenghiep != '') {
+            $output .= '<p class="mona-user-info ">' . $nghenghiep . '</p>';
+        }
+        $output .= '</div></div>';
+    }
+    return $output;
+}
+
+add_filter( 'wpp_custom_html', 'my_custom_popular_posts_html_list', 10, 2 );
